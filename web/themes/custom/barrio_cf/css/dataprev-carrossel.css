@@ -1,0 +1,100 @@
+
+.carrossel .group-barra {
+    padding: 0px 30px 50px 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 578px) {
+.carrossel .group-barra {
+    padding: 0px 30px 50px 20px;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+	.carrossel .field--name-node-title h2 {
+		font-weight: 900;
+		line-height: 37px;
+		color: #ffffff;
+		font-size: 2em;
+	}
+}
+
+.carrossel .field--name-node-title h2 a {
+    color: #ffffff;
+}
+
+.carrossel .field--name-node-title h2 {
+    font-weight: 900;
+    line-height: 37px;
+    color: #ffffff;
+    font-size: 2em;
+}
+
+.carrossel .field--name-body {
+    font-size: 0.935em;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.carrossel .field--name-field-image:after {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    content: "";
+    background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(#212121));
+    background-image: -o-linear-gradient(transparent,#212121);
+    background-image: linear-gradient(transparent,#212121);
+}
+
+
+.carrossel .view-mode-full .field, .carrossel .node .field {
+	margin: 0;
+    min-height: 50px;
+}
+
+
+@media (min-width: 320px) and (max-width: 578px) {
+.carrossel .group-barra {
+    padding: 0;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+}
+	.carrossel .field--name-node-title h2 {
+		font-weight: 900;
+		line-height: initial;
+		color: initial;
+		font-size: 1em;
+	}
+	.carrossel .field--name-field-image:after {
+		width: 100%;
+		height: 50%;
+		position: relative;
+		bottom: 0;
+		display: block;
+		content: "";
+		background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(#212121));
+		background-image: -o-linear-gradient(transparent,#212121);
+		background-image: linear-gradient(transparent,#212121);
+		}
+	.carrossel .field--name-node-title h2 a {
+		color: #161516;
+		font-size: 1.375em;
+		font-weight: bold;
+		line-height: 26px;
+	}
+	.carrossel .field--name-body {
+		font-size: 0.935em;
+		line-height: 23px;
+		color: initial;
+	}
+	
+	.flexslider .flex-direction-nav a.flex-prev, .flexslider .flex-direction-nav a.flex-next {
+	    position: absolute;
+		top: 25%;
+	}
+}

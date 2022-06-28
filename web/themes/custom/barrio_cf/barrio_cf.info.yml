@@ -1,0 +1,71 @@
+name: barrio_cf
+type: theme
+description: 'Basic structure for a Bootstrap Barrio SubTheme.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+
+
+  
+libraries:
+  - barrio_cf/bootstrap
+  - barrio_cf/global-styling
+
+regions:
+  cookies: 'Politica de cookies'
+  top_header_left: 'Top header left'
+  top_header_center: 'Top header center'
+  top_header_right: 'Top header right'
+  acessibility: 'Atalhos de Acessibilidade'  
+  header: 'Header'
+  header_form: 'Header form'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  search: "Search"
+  
+  # Float menu
+  floatmenu1_col1: 'Float Menu 1 Col 1'
+  floatmenu1_col2: 'Float Menu 1 Col 2'
+  floatmenu1_col3: 'Float Menu 1 Col 3'
+  floatmenu1_col4: 'Float Menu 1 Col 4'
+  floatmenu1_col5: 'Float Menu 1 Col 5'
+  floatmenu1_col6: 'Float Menu 1 Col 6'  
+  
+  trilha_left:  'Trilha Left'
+  trilha_right: 'Trilha Right'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: Highlighted
+  featured_top: 'Featured top'
+  
+  # CONTENT HOMEPAGE
+  home_carrossel: 'Carrossel - Home'
+  home_noticia_topo: 'Noticia Topo - Home'
+  home_noticia_1_destaque: 'Notícia 1 destaque - Home'
+  home_noticia_2_destaque: 'Notícia 2 destaque - Home'
+  home_noticia_3_destaque: 'Notícia 3 destaque - Home'
+  home_noticia_bottom: 'Noticia Base - Home'
+  
+  #CONTENT PAGE
+  breadcrumb: 'Breadcrumb'
+  content_top: 'Content top'
+  content: Content
+  content_bottom: 'Content bottom'
+  
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  featured_bottom_first: 'Featured bottom first'
+  featured_bottom_second: 'Featured bottom second'
+  featured_bottom_third: 'Featured bottom third'
+  featured_bottom_fourth: 'Featured bottom fourth'
+  featured_bottom_fifth: 'Featured bottom fifth'
+  featured_bottom_sixth: 'Featured bottom sixth'
+  footer0_left: 'First Footer Left'
+  footer0_right: 'First Footer right'  
+  footer_first: 'Second Footer first'
+  footer_second: 'Second Footer second'
+  footer_third: 'Second Footer third'
+  footer_fourth: 'Second Footer fourth' 
+  footer_fifth: 'Second Footer fifth' 
+  footer_sixth: 'Second Footer sixth' 
+  footer_bottom: 'Second Footer bottom'

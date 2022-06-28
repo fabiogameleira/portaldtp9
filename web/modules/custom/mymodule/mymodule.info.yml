@@ -1,0 +1,7 @@
+name: My Module
+description: 'My Module - Migrar Field Colletion (Field_pauta -agenda) D7 para Paragraphs D9'
+package: Custom
+version: '8.x-1.0'
+project: 'my_first_custom_module'
+type: module
+core_version_requirement: ^8.8 || ^9

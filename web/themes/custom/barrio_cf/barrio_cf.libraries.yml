@@ -1,0 +1,44 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:      
+      css/style.css: {}
+      css/barra-top.css: {}      
+      css/color.css: {} 
+      css/dataprev-contraste.css: {}
+      css/dataprev-lgpd.css: {}  
+      css/dataprev-fontes.css: {}
+      css/dataprev-noticias.css: {}  
+      css/dataprev-carrossel.css: {} 
+      css/dataprev-breadcrumb.css: {}  
+      css/dataprev-assuntosemalta.css: {}    
+      css/flexslider_img.css: {}       
+    component:
+      css/components/site-footer.css: {} 
+      css/components/skip-link.css: {}
+      css/components/search-form.css: {}      
+  js:
+    js/global.js: {}
+    js/highcontrast.js: {} 
+    js/md_letrachanger.js: {} 
+    js/menucollapseid.js: {}    
+
+bootstrap:
+  js:
+    /libraries/bootstrap/dist/js/bootstrap.min.js: {}
+    
+bootstrap_cdn:
+  js:
+    //stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js: {}
+  css:
+    component:
+     //stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css: {}
+color.preview:
+  version: VERSION
+  css:
+    theme:
+      color/preview.css: {}
+  js:
+    color/preview.js: {}
+  dependencies:
+    - color/drupal.color

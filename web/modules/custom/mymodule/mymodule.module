@@ -1,0 +1,56 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\node\NodeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\paragraphs\Entity\Paragraph;  
+
+function mymodule_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.mymodule':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Module - Importar paragraphs com feeds.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert() for 'paragraph'.
+ */
+
+function mymodule_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+  
+  $paragraph = $entity;
+  //$parent_type = $paragraph->parent_type->value;
+  //$parent_field_name = $paragraph->parent_field_name->value;
+  if (isset($paragraph->parent_id->value)) {
+		$parent_id = $paragraph->parent_id->value;
+		$id = $paragraph->id();
+  //dpm('node_id: '. $parent_id . ' paragraph_id -> '. $id);
+  //dpm('parent_type: '. $parent_type . ' | parent_field_name-> '. $parent_field_name);
+  // carregar o node
+  // Adicionar o relacionamento com o paragrafo
+	  if (isset($parent_id)) {
+		  
+		$node = \Drupal\node\Entity\NODE::load($parent_id);
+		if ($node) {
+		  $titulo = $node->title->getValue()['0']['value']; 
+		  $nid = $node->nid->getValue()['0']['value'];
+		  //dpm($nid . ' - '.$titulo);
+		  // Check if product already has a reference to this paragraph.
+		  //foreach ($node->field_pauta as $item) {
+			//if ($item->target_id == $paragraph->id()) {
+				  // Paragraph found. Abort.
+				  //return;
+				  //dpm($nid);
+				  //dpm($paragraph->field_arquivo->uri);
+			//}
+
+			$node->field_pauta[] = $paragraph;
+			$node->save();
+		  //}
+
+		}
+	  }
+   }
+}

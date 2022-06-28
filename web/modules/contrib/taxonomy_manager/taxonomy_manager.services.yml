@@ -1,0 +1,5 @@
+services:
+  taxonomy_manager.helper:
+    class: Drupal\taxonomy_manager\TaxonomyManagerHelper
+    arguments:
+     - '@entity_type.manager'

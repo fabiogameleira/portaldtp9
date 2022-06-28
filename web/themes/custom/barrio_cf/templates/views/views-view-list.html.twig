@@ -1,0 +1,48 @@
+{#
+/**
+ * @file
+ * Theme override for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ */
+#}
+{% if attributes -%}
+  <div {{ attributes }}>
+{% endif %}
+  {% if title %}
+  {#
+    /* Verifica a existencia da class='ano' */
+	/* setado na view Reunião Conselho Fiscal */ 
+	/* Formato:Lista HTML | Configurações */
+	/* Exisitindo insere a class collapse no ul */
+   #} 	
+    {% if attributes.hasClass('ano') %}
+      <h3 class="titulo-ano" role="group" data-bs-toggle="collapse" title="Clique no ano para exibir ou ocultar reuniões." data-bs-target="._{{ title|trim }}">{{ title }}</h3>
+	{% endif %}
+  {% endif %}
+  
+  {% if attributes.hasClass('ano') %}
+		<{{ list.type }}{{ list.attributes }} class="collapse _{{ title|trim }}">
+  {% else %}
+		<{{ list.type }}{{ list.attributes }} ">
+  {% endif %}
+  
+    {% for row in rows %}
+      <li{{ row.attributes }}>{{ row.content }}</li>
+    {% endfor %}
+
+  </{{ list.type }}>
+
+{% if attributes -%}
+  </div>
+{% endif %}

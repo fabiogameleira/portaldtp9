@@ -1,0 +1,91 @@
+/* ---------- Color Module Styles ----------- */
+
+/*body {
+  color: #3b3b3b;
+  background: #f4f4f4;
+}*/
+
+body.highcontrast {
+	background-color: #000 !important;	
+}
+
+.highcontrast  {
+    color: #000 ;
+}
+
+.highcontrast a {
+    color: #FC0 !important;
+}
+
+.highcontrast a.btn-outline-primary
+{
+    color: #000 !important;
+}
+
+.highcontrast a.btn-outline-primary:hover, 
+.highcontrast a.btn-outline-primary:focus
+{
+    color: #fff !important;
+	border: 2px solid #fff;
+}
+
+.highcontrast .btn-outline-primary:hover, 
+.highcontrast .btn-outline-primary:focus {
+    background-color: #000;
+    border: #FFF solid 2px;
+}
+
+.highcontrast p {
+	color: #fff !important;
+}
+
+.highcontrast h1, .highcontrast h2, .highcontrast h3,.highcontrast h4 {
+	color: #fff !important;
+}
+
+.highcontrast h1.title {
+    border-top: 1px solid rgb(127 125 124 / 80%);
+    border-bottom: 1px solid rgb(127 125 124 / 80%); 
+}
+
+.highcontrast #cookies {
+  background-color: #000;	
+}
+
+.highcontrast #navbar-main {
+    background-color: #000;
+}
+
+.highcontrast .nav-tabs .nav-item.show .nav-link, .highcontrast .nav-tabs .nav-link.active {
+    color: #000;
+    background-color: #000;
+}
+
+.highcontrast #barra .nav > li > button {
+    color: #FC0;
+}
+
+.highcontrast .subheader2 {
+    border-top: 1px solid rgb(127 125 124 / 80%);
+    border-bottom: 1px solid rgb(127 125 124 / 80%);
+}
+
+.highcontrast .ft1 {
+	border-bottom: 1px solid rgb(127 125 124 / 80%);
+}
+
+
+.highcontrast .site-footer {
+    /*background-color: #EDECEC;*/
+	background-color: #000;
+	border-top: 1px solid #EDECEC;
+    border-bottom: 1px solid #EDECEC;
+}
+
+.highcontrast .nav li a, .highcontrast .nav li span {
+    color: #FC0;
+}
+
+.highcontrast .menu--menu-hamburguer ul.nav {
+    background-image: url(../image/icon-menu-contrast.png);
+}

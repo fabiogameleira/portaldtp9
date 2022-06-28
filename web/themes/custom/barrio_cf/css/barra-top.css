@@ -1,0 +1,185 @@
+
+#lgpd {
+	background-color: #ededed;
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+}
+
+#lgpd p {
+  margin: 0;
+  margin: 0;
+}
+
+#barra {
+	background-color: #000;
+    margin: 0;
+    padding: 0px 10px 5px 10px;
+}
+
+#barra .barra-top-left {
+    /* margin: auto; */
+    text-align: center;
+}
+
+#barra .region-top-header-right {
+    /*float: right;*/
+	text-align: center;
+}
+
+#barra .barra-top-center{
+	display: flex;
+    justify-content: center;
+	padding: 6px;
+}
+
+@media (min-width: 320px) and (max-width: 578px)  {
+	#barra .barra-top-right {
+		margin-top: 20px;
+	}
+}
+
+#barra .barra-right ul li {
+	padding-right: 5px;
+    padding-bottom: 5px;
+}
+#barra .barra-right  ul.menu-relevancia li {
+	display:inline-flex;
+}
+
+#barra .barra-right ul.menu-relevancia li a:before {
+    padding: 0px 5px 0px 5px;
+}
+
+
+#barra .barra-right ul li a {
+    text-decoration: none;
+}
+
+#barra .papeis a, #barra .papeis a:hover {
+    color: #FC0;
+}
+
+#barra {	
+   color: #FFFFFF;
+   padding: 10px
+}
+
+@media (min-width: 320px) and (max-width: 578px)  {
+	#barra a {
+	  padding: 10px;
+	}	
+}
+
+#barra .nav > li > a, 
+#barra .nav > li > button,
+#barra .nav > li > span {
+    color: #fff;
+	background-color: transparent;
+    border: none;
+}
+
+#barra #block-menuacessibilidade ul li {
+	margin: 0 5px 0 5px;
+}
+@media (min-width: 320px) and (max-width: 578px)  {
+	#barra #block-menuacessibilidade ul li {
+		margin: 0 10px 0 10px;
+	}
+}
+
+#barra .search-help-link {
+	display:none;
+}
+
+#barra .search-block-form .button {
+	color: transparent;
+    background-image: url(/core/themes/stable/images/core/icons/505050/loupe.svg);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    padding-left: 20px;
+    width: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 578px)  {
+	#barra ul.menu {
+		margin: 0;
+		padding: 0;
+		list-style: none outside;
+		/*font-size: 13px;*/
+		font-size: 0.928em;
+	}
+}
+
+
+
+#barra .nav > li > a:hover, #barra .nav > li > a:focus,
+#barra .nav > li > a:active {
+    background-color: #000;
+}
+
+#barra .nav .open > a, #barra .nav .open > a:hover, #barra .nav .open > a:focus {
+    background-color: transparent;
+    border-color: #000;
+}
+
+#barra ul.menu.dropdown-menu li a,
+{
+    color: #ccc;
+}
+
+#barra .block {
+    margin: 0;
+}
+
+#barra .fas, #barra .fab {
+	font-weight: 500;
+    font-size: 22px;	
+}
+
+#barra .fa-adjust:before,
+#barra .fa-accessible-icon:before,
+#barra .fa-search-plus:before,
+#barra .fa-search-minus:before{
+    margin-right: 10px;
+
+}
+
+#barra .fa-accessible-icon:before {
+	font-weight: 400;
+}
+
+#barra .fas, #barra .fab {
+overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+	width: 1.79em;
+    height: 1.48em;
+    word-wrap: normal;
+}
+
+#barra .fas.fa-adjust:before,
+#barra .fas.fa-search-plus:before,
+#barra .fas.fa-search-minus:before{
+	font-weight: 600;
+}
+
+
+/* DROPDOWN MENU */
+#barra .dropdown-menu > .active > a,
+#barra ul.menu.dropdown-menu li a:hover,
+#barra ul.menu.dropdown-menu li a:focus,
+#barra ul.menu.dropdown-menu li a:active
+{
+    background-color: #ddd;
+}
+
+#barra ul.menu.dropdown-menu li a:hover,
+#barra ul.menu.dropdown-menu li a:focus,
+#barra ul.menu.dropdown-menu li a:active
+{
+   text-decoration: underline;
+}
+
+#barra .top-center {
+	text-align: center;
+}

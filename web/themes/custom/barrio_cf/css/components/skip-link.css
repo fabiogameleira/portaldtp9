@@ -1,0 +1,34 @@
+/**
+ * @file
+ * Styles for the skip link.
+ */
+
+
+.skip-link {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 50;
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  font-size: 0.94em;
+  line-height: 1.7em;
+  padding: 1px 10px 2px;
+  border-radius: 0 0 10px 10px;
+  border-bottom-width: 0;
+  outline: 0;
+}
+#shortcut-keyboard:focus-within a, .skip-link.visually-hidden.focusable:focus {
+	position: relative !important;
+    color: #000 !important;
+    padding: 4px !important;
+    margin: 0px 5px 0px 0px !important;
+    width: unset !important;
+    height: unset !important;
+    left: unset !important;
+    background-color: unset !important;
+    border: unset !important;
+}
+
+

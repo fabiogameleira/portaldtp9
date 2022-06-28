@@ -1,0 +1,60 @@
+﻿ html, body {
+    font-size: 16px;
+ }
+ 
+ h2 {
+	font-size: 1.2em;
+    font-weight: 600;
+ }
+ h3 {
+	font-size: 1.2em;
+	font-weight:500;
+ }
+ h4 {
+	font-size: 1em; 
+ }
+
+.page-header {
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.compartilhe-evento{
+	font-weight: 700;
+    font-size: 1.2em;
+}
+
+.navbar-default .navbar-nav > li > a {
+	font-weight: 600;
+}
+
+@media (max-device-width: 480px) {
+  body {
+  font-size: 15px;
+ }
+}
+
+ 
+label {
+    font-weight: normal;
+    font-size: 0.75em;
+}
+
+.ui-datepicker table {
+     font-size: .8em;
+}
+
+.menu.nav.navbar a {
+	font-size: 0.875em;
+}
+
+span.date-display-single {
+
+}
+
+
+/* breadcrumb */
+
+.breadcrumb {
+   font-size: 0.85em;
+}    
