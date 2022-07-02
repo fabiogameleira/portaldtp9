@@ -84,11 +84,12 @@ a {
    margin-bottom: 20px;
  	/*display: flex; */
 }
+/*
 .subheader2 {
     border-top: 1px solid rgb(127 125 124 / 20%);
     border-bottom: 1px solid rgb(127 125 124 / 20%);
-	/*display: flex;*/
 }
+*/
 
 .subheader2 nav {
 	/*display: flex;*/
@@ -241,16 +242,6 @@ a {
 .btn {
 	border-radius: 3em;
 	border: #000 solid 2px;
-}
-
-.menu--menu-relevancia .nav li a, 
-.menu--menu-relevancia .nav li button, 
-.menu--menu-relevancia .nav li span {
-
-    margin: 5px;
-    padding: 10px;
-	font-weight: 600;
-
 }
 
 /* ---- Identificação do usuário --------*/
@@ -413,21 +404,6 @@ nav a.navbar-brand {
 .navbar-collapse {
     box-shadow: unset;
 }
-
-.menu--menu-hamburguer ul.nav {
-	background-image: url(../image/icon-menu-cor.png);
-	background-repeat: no-repeat;
-	background-position-y: 50%;
-	background-position-x: 0%;
-}
-
-.menu--menu-hamburguer ul.nav > li > button.floatmenu-toggle {
-    color: transparent;
-    margin: 0;
-    padding: 0;
-} 
-
-
 
 /*
 ul.nav.navbar-nav {
@@ -672,27 +648,10 @@ th.select-all {
 a:hover, a:focus {
     text-decoration: underline;
 }
-nav .menu-relevancia {
-	font-size: 1.0625em;
-    font-weight: 500;
-}
 
 .fa, .fas {
     font-family: Raleway,sans-serif;
     font-weight: 500;
-}
-
-
-/* MENU ACESSIBILDIADE */
-
-.menu--menu-acessiblidade-cor .nav-item a {
-	font-weight: 700;
-	font-size: 0.675em;
-    text-transform: uppercase;
-}
-
-.menu--menu-acessiblidade-cor .nav-item a:before {
-	font-size: 1.4em;
 }
 
 .menu--menu-operacional .fa, .menu--menu-operacional  .fas {
@@ -1041,11 +1000,4 @@ ol.breadcrumb  {
 		margin: 0px 0 10px 0;
 	}
 	
-	.menu--menu-relevancia .nav li a, 
-	.menu--menu-relevancia .nav li button, 
-	.menu--menu-relevancia .nav li span {
-    margin: 5px;
-    padding: 0px;
-    font-weight: 600;
-	}
 }

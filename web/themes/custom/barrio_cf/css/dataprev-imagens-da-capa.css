@@ -1,0 +1,12 @@
+.image-background {
+	height: 530px;
+	background-size: cover;
+}
+
+#header-note.img-capa-noticias {
+    background-image: url(/sites/default/files/field/image/capa/img-capa-noticias.png);
+    height: 530px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

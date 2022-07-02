@@ -11,7 +11,11 @@ global-styling:
       css/dataprev-noticias.css: {}  
       css/dataprev-carrossel.css: {} 
       css/dataprev-breadcrumb.css: {}  
-      css/dataprev-assuntosemalta.css: {}    
+      css/dataprev-assuntosemalta.css: {} 
+      css/dataprev-imagens-da-capa.css: {} 
+      css/dataprev-menu-relevancia.css: {}  
+      css/dataprev-menu-hamburger.css: {}
+      css/dataprev-menu-servicos.css: {}
       css/flexslider_img.css: {}       
     component:
       css/components/site-footer.css: {} 

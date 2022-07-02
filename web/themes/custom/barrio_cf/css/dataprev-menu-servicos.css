@@ -1,0 +1,21 @@
+.menu--menu-servicos .nav-item a,
+.menu--menu-servicosbranco .nav-item a {
+    font-weight: 700;
+    font-size: 0.675em;
+    text-transform: uppercase;
+}
+
+.menu--menu-servicos .nav-item a:before,
+.menu--menu-servicosbranco .nav-item a:before
+ {
+    font-size: 1.4em;
+}
+
+.menu--menu-servicosbranco .nav li a, .menu--menu-servicosbranco .nav li button, .menu--menu-servicosbranco .nav li span {
+    color: #fff;
+}
+
+.menu--menu-servicosbranco .fal.fa-assistive-listening-systems:before,
+.menu--menu-servicosbranco .fas.fa-bullhorn:before {
+    color: #fff;
+}

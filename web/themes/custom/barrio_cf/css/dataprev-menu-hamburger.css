@@ -1,0 +1,27 @@
+.menu--menu-hamburguer ul li button, 
+.menu--menu-hamburgerbranco ul li button {
+    color: transparent;
+	padding: 0;
+}
+
+.menu--menu-hamburguer ul li {
+	background-image: url(../image/icon-menu-cor.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0%;
+}
+
+.menu--menu-hamburgerbranco ul li {
+	background-image: url(../image/icon-menu.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0%;
+}
+
+.menu--menu-hamburguer .nav-link:focus,
+.menu--menu-hamburguer .nav-link:hover,
+.menu--menu-hamburgerbranco .nav-link:focus, 
+.menu--menu-hamburgerbranco .nav-link:hover
+ {
+    color: transparent;
+}
