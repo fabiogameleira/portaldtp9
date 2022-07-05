@@ -19,6 +19,7 @@ regions:
   acessibility: 'Atalhos de Acessibilidade'  
   header: 'Header'
   header_form: 'Header form'
+  
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   search: "Search"
@@ -45,6 +46,7 @@ regions:
   home_noticia_2_destaque: 'Notícia 2 destaque - Home'
   home_noticia_3_destaque: 'Notícia 3 destaque - Home'
   home_noticia_bottom: 'Noticia Base - Home'
+  noticia_destaque: 'Noticia em destaque'
   
   #CONTENT PAGE
   breadcrumb: 'Breadcrumb'

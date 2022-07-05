@@ -1,0 +1,109 @@
+
+#show-floatmenu ul li,
+#show-floatmenu .menu-item--expanded .dropdown-submenu  {
+	position: relative;
+    display: block;
+	text-align: left;
+    border-radius: 0;
+    border: none;
+    width: 100%;
+}
+#show-floatmenu ul li a, 
+#show-floatmenu ul li button,
+#show-floatmenu ul li span {
+	padding: 10px;	
+	color: #4F4E4E;
+}
+
+#show-floatmenu h2 {
+    text-transform: none;
+    font-size: 1em;
+    text-align: left;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#show-floatmenu .menu.collapse.show {
+	position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 1000;
+    display: block;
+    background-color: #fff;
+    min-width: 12rem;
+    padding: .5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    list-style: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+	box-shadow: 0 6px 12px rgb(0 0 0 / 18%);
+}
+
+@media (min-width: 320px) and (max-width: 578px)  {
+	#show-floatmenu .menu.collapse.show {
+		left: 5%;
+		top: 45px;
+	}
+}
+
+#show-floatmenu .menu-item--expanded > a:after,
+#show-floatmenu .menu-item--expanded > span:after,
+{
+    display: block;
+    content: " ";
+	z-index: 1000;
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #cccccc;
+    margin-top: 7px;
+    margin-right: -10px;
+}
+
+#show-floatmenu .menu-item--expanded .dropdown-submenu
+{
+    background-image: url(../image/seta-direita-cinza.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+	background-position-x: 96%;
+}
+@media (min-width: 320px) and (max-width: 578px)  {
+#show-floatmenu .menu-item--expanded .dropdown-submenu
+	{
+		background-image: url(../image/seta-direita-abaixo-cinza.png);
+	}
+}
+
+.floatmenu {
+	margin-bottom: 12px;
+    box-shadow: 0 2px 1px #ccc;
+	background-color: #fff;
+	position: absolute;
+	z-index: 1000;
+	width: 100%;
+	left: 0;
+		}
+
+.floatmenu .nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 10px 10px 10px;
+}
+
+.floatmenu h2.block-title {
+
+    text-transform: none;
+
+}
+
+.floatmenu.collapse {
+    visibility: unset; 
+}

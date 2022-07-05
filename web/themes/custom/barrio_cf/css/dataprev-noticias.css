@@ -60,7 +60,34 @@
     height: 530px;
 }
 
-.node--type-noticia .field--name-node-post-date {
-    float: left;
-    margin-right: 15px;
+
+.page-taxonomy-term-3 .views-row {
+	flex: 0 0 auto;
+    width: 33.33333333%;
+	min-height: 535px
+}
+
+/* NOTICIAS EM DESTAQUE - PAGINA DE NOTICIAS*/
+
+.noticias-destaque h2,
+.noticias-destaque a,
+.noticias-destaque p {
+    color: #fff;
+}
+
+.noticias-destaque h2 {
+    font-size: 2em;
+    font-weight: 900;
+    line-height: 37px;
+    text-decoration: none;
+}
+
+.page-taxonomy-term-3 .noticias-destaque .views-row {
+	flex: unset;
+    width: unset;
+    min-width: unset;
+}
+
+.noticias-destaque {
+    padding-top: 50px;
 }
