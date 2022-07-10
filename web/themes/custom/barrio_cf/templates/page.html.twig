@@ -102,11 +102,17 @@
 			</div>
         {% endif %}
 		
-		{# Verifica em barrio_cf_preprocess_page se página é de taxonomia 
-		   e cria a varável taxonomia se existir #}
-		   
+		{# Verifica em barrio_cf_preprocess_page se página é de taxonomia, 
+		   sendo será criada a variável taxonomia #}
+		    
 		{% if taxonomia %}
-		 <div id="header-note" class="img-capa-{{ taxonomia }}">
+		
+		{# taxonomia obtida em barrio_cf.theme - barrio_cf_preprocess_page #}
+		  {% if img_capa_inline_css %}
+			<div id="header-note" style="{{img_capa_inline_css}}">
+          {% else %}
+			<div id="header-note" class="img-capa-{{ taxonomia }}">
+		  {% endif %}
 		{% else %}
 		<div id="header-note">
 		{% endif %}

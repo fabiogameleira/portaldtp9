@@ -33,23 +33,64 @@ function barrio_cf_form_system_theme_settings_alter(&$form, FormStateInterface $
   ];
 }
 
+
 function barrio_cf_preprocess_page(&$variables) {
- 
-    // Lê parametros da página
+	// Default template: page.html.twig.
+	
+	// Lê parametros da página
 	$parameters = \Drupal::routeMatch()->getParameters()->all();
- 
-	if (isset($parameters['taxonomy_term'])) {
-		// Obtem a taxonomia
-		$term = $parameters['taxonomy_term']; 
-		
-		// Faz translitare do nome da taxonomia
-		$trans = \Drupal::transliteration();
-		$transformed = strtolower($trans->transliterate($term->name->value));
-		// Cria variável taxonomia para exibir na página
-		$variables['taxonomia'] = $transformed;
-    }
+	$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+	
+	if (!$variables['is_front']) {			
+		if (isset($parameters['taxonomy_term'])) {
+			// Obtem a taxonomia
+			$term = $parameters['taxonomy_term']; 
+			
+			// Faz translitare do nome da taxonomia
+			$trans = \Drupal::transliteration();
+			$transformed = strtolower($trans->transliterate($term->name->value));
+			// Cria variável taxonomia para exibir em page.html.twig
+			// Altera class="img-capa-{{ taxonomia }}"> para exibir imagem
+			// de fundo padrão da taxonomia em dataprev-imagens-da-capa.css
+			$variables['taxonomia'] = $transformed;
+			
+			// Verifica se tem notícia em destaque e com nova imagem de fundo (field_imagem_da_capa) 
+            // existindo insere no css a nova imagem
+  
+			$results = views_get_view_result('noticias_imagem_de_fundo', $display_id = 'page_1');
+			if ($results) {
+				foreach ($results as $result) {
+					$node = $result->_entity;
+					// Verifica se tem o field_imagem_da_capa preenchido
+					if (isset($node->field_imagem_da_capa->target_id)) {
+						$fid = $node->field_imagem_da_capa->target_id;
+						$file = \Drupal\file\Entity\File::load($fid);;
+
+						$url= $file->uri->value;
+						$url = '/sites/default/files/'.str_replace('public://','',$url);
+						$variables['img_capa_inline_css'] = 'background-image: url('.$url .') !important; background-repeat: no-repeat; background-size: cover; height: 530px; background-position: center center;';
+				    }
+				}
+			  }
+		}
+	}
 
 }
+/*
+function barrio_cf_preprocess_taxonomy_term(&$variables) {
+   // Default template: taxonomy-term.html.twig	
+  // Não retorna a variável para page.html
+  //$variables['view_mode'] = $variables['elements']['#view_mode'];
+  //$variables['term'] = $variables['elements']['#taxonomy_term'];
+  $term = $variables['elements']['#taxonomy_term'];
+  kint($term->name->value);
+  
+  $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+  
+ 
+}
+*/
+
 /*
 function barrio_cf_preprocess_menu(&$variables, $hook) {
 
