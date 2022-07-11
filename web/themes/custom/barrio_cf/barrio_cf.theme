@@ -54,24 +54,45 @@ function barrio_cf_preprocess_page(&$variables) {
 			// de fundo padrão da taxonomia em dataprev-imagens-da-capa.css
 			$variables['taxonomia'] = $transformed;
 			
-			// Verifica se tem notícia em destaque e com nova imagem de fundo (field_imagem_da_capa) 
-            // existindo insere no css a nova imagem
-  
-			$results = views_get_view_result('noticias_imagem_de_fundo', $display_id = 'page_1');
-			if ($results) {
-				foreach ($results as $result) {
-					$node = $result->_entity;
-					// Verifica se tem o field_imagem_da_capa preenchido
-					if (isset($node->field_imagem_da_capa->target_id)) {
-						$fid = $node->field_imagem_da_capa->target_id;
-						$file = \Drupal\file\Entity\File::load($fid);;
+			if ($transformed == 'noticia') {
+				// Verifica se tem notícia em destaque e com nova imagem de fundo (field_imagem_da_capa) 
+				// existindo insere no css a nova imagem
+				$results = views_get_view_result('noticias_imagem_de_fundo', $display_id = 'page_1');
+				if ($results) {
+					foreach ($results as $result) {
+						$node = $result->_entity;
+						// Verifica se tem o field_imagem_da_capa preenchido
+						if (isset($node->field_imagem_da_capa->target_id)) {
+							$fid = $node->field_imagem_da_capa->target_id;
+							$file = \Drupal\file\Entity\File::load($fid);;
 
-						$url= $file->uri->value;
-						$url = '/sites/default/files/'.str_replace('public://','',$url);
-						$variables['img_capa_inline_css'] = 'background-image: url('.$url .') !important; background-repeat: no-repeat; background-size: cover; height: 530px; background-position: center center;';
-				    }
+							$url= $file->uri->value;
+							$url = '/sites/default/files/'.str_replace('public://','',$url);
+							$variables['img_capa_inline_css'] = 'background-image: url('.$url .') !important; background-repeat: no-repeat; background-size: cover; height: 530px; background-position: center center;';
+						}
+					}
 				}
-			  }
+			} else {
+				
+				// Verifica se tem Págona básica em destaque e com nova imagem de fundo (field_imagem_da_capa) 
+				// existindo insere no css a nova imagem
+				
+				$results = views_get_view_result('pagina_basica_imagem_de_fundo', $display_id = 'page_1');
+				if ($results) {
+					foreach ($results as $result) {
+						$node = $result->_entity;
+						// Verifica se tem o field_imagem_da_capa preenchido
+						if (isset($node->field_imagem_da_capa->target_id)) {
+							$fid = $node->field_imagem_da_capa->target_id;
+							$file = \Drupal\file\Entity\File::load($fid);;
+
+							$url= $file->uri->value;
+							$url = '/sites/default/files/'.str_replace('public://','',$url);
+							$variables['img_capa_inline_css'] = 'background-image: url('.$url .') !important; background-repeat: no-repeat; background-size: cover; height: 530px; background-position: center center;';
+						}
+					}
+				}
+			}
 		}
 	}
 
