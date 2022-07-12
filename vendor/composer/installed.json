@@ -2908,6 +2908,57 @@
             "install-path": "../../web/modules/contrib/extlink"
         },
         {
+            "name": "drupal/extra_image_field_classes",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/extra_image_field_classes.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/extra_image_field_classes-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "ec74ee043588aaa53afc746d9f5596a089536ae0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1634928722",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "HongPong",
+                    "homepage": "https://www.drupal.org/user/60005"
+                },
+                {
+                    "name": "rahulbaisanemca",
+                    "homepage": "https://www.drupal.org/user/2822887"
+                }
+            ],
+            "description": "This module allows to add extra classes on image field.",
+            "homepage": "https://www.drupal.org/project/extra_image_field_classes",
+            "support": {
+                "source": "https://git.drupalcode.org/project/extra_image_field_classes"
+            },
+            "install-path": "../../web/modules/contrib/extra_image_field_classes"
+        },
+        {
             "name": "drupal/field_group",
             "version": "3.2.0",
             "version_normalized": "3.2.0.0",
@@ -3294,6 +3345,68 @@
             "install-path": "../../web/modules/contrib/fontyourface"
         },
         {
+            "name": "drupal/image_resize_filter",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/image_resize_filter.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/image_resize_filter-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "5a8869959407f2eeec7495d5cf64396334e0a673"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1591040375",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "David Valdez (gnuget)",
+                    "homepage": "https://www.drupal.org/u/gnuget",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Ra Mänd (ram4nd)",
+                    "homepage": "https://www.drupal.org/u/ram4nd",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "ram4nd",
+                    "homepage": "https://www.drupal.org/user/601534"
+                }
+            ],
+            "description": "Resizes images based on width and height attributes and optionally link to the original image.",
+            "homepage": "https://www.drupal.org/project/image_resize_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/image_resize_filter",
+                "issues": "https://www.drupal.org/project/issues/image_resize_filter"
+            },
+            "install-path": "../../web/modules/contrib/image_resize_filter"
+        },
+        {
             "name": "drupal/imce",
             "version": "2.4.0",
             "version_normalized": "2.4.0.0",
@@ -3345,6 +3458,54 @@
                 "issues": "https://www.drupal.org/project/issues/imce?version=8.x"
             },
             "install-path": "../../web/modules/contrib/imce"
+        },
+        {
+            "name": "drupal/insert",
+            "version": "dev-1.x",
+            "version_normalized": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/insert.git",
+                "reference": "af6af9fe0619024456cdb3f902b2da0a0dc93b84"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0+3-dev",
+                    "datestamp": "1621866532",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "installation-source": "source",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Snater",
+                    "homepage": "https://www.drupal.org/user/3513717"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                }
+            ],
+            "description": "Assists in inserting files, images, or other media into the body field or other text areas.",
+            "homepage": "https://www.drupal.org/project/insert",
+            "support": {
+                "source": "https://git.drupalcode.org/project/insert"
+            },
+            "install-path": "../../web/modules/contrib/insert"
         },
         {
             "name": "drupal/jquery_ui",
@@ -4017,6 +4178,61 @@
                 "source": "https://git.drupalcode.org/project/token"
             },
             "install-path": "../../web/modules/contrib/token"
+        },
+        {
+            "name": "drupal/twig_vardumper",
+            "version": "3.0.0",
+            "version_normalized": "3.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/twig_vardumper.git",
+                "reference": "3.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/twig_vardumper-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "bdb3ab7bb8e3772cc4bb414ca8fb452ce1159841"
+            },
+            "require": {
+                "drupal/core": "^9",
+                "symfony/var-dumper": "~5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0",
+                    "datestamp": "1586281958",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ruben Egiguren a.k.a keopx",
+                    "homepage": "https://www.drupal.org/user/377362",
+                    "email": "keopx@keopx.net"
+                }
+            ],
+            "description": "Twig vardumper provides a better dump() and vardumper() function that can help you debug Twig variables.",
+            "homepage": "https://www.drupal.org/project/twig_vardumper",
+            "keywords": [
+                "Development",
+                "Drupal",
+                "Twig"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/twig_vardumper",
+                "issues": "https://www.drupal.org/project/issues/twig_vardumper"
+            },
+            "install-path": "../../web/modules/contrib/twig_vardumper"
         },
         {
             "name": "drupal/user_redirect",

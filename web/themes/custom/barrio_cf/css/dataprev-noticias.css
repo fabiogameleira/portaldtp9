@@ -65,3 +65,8 @@
     width: 33.33333333%;
 	min-height: 535px
 }
+
+.field--name-node-post-date {
+	float: left;
+    margin-right: 10px;
+}

@@ -736,6 +736,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.6',
     ),
+    'drupal/extra_image_field_classes' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
     'drupal/field' => 
     array (
       'replaced' => 
@@ -867,6 +876,15 @@ private static $installed = array (
         0 => '9.4.0',
       ),
     ),
+    'drupal/image_resize_filter' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
     'drupal/imce' => 
     array (
       'pretty_version' => '2.4.0',
@@ -882,6 +900,16 @@ private static $installed = array (
       array (
         0 => '9.4.0',
       ),
+    ),
+    'drupal/insert' => 
+    array (
+      'pretty_version' => 'dev-1.x',
+      'version' => 'dev-1.x',
+      'aliases' => 
+      array (
+        0 => '1.x-dev',
+      ),
+      'reference' => 'af6af9fe0619024456cdb3f902b2da0a0dc93b84',
     ),
     'drupal/jquery_ui' => 
     array (
@@ -1289,6 +1317,15 @@ private static $installed = array (
       array (
         0 => '9.4.0',
       ),
+    ),
+    'drupal/twig_vardumper' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0',
     ),
     'drupal/update' => 
     array (

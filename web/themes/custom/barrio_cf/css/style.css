@@ -889,7 +889,7 @@ ol.breadcrumb  {
 }
 
 .field--name-body img {
-    margin: 10px;
+  /* margin: 10px;*/
 }
 
 @media (max-width: 420px) {

@@ -1,0 +1,39 @@
+.image-imagem_a_esquerda_do_paragrafo_465_x_267 {
+	width: 465px;
+	height: 267px;
+	float: left;
+	margin-right: 10px;
+}
+
+.image-imagem_a_direita_do_paragrafo_465_x_267 {
+	width: 465px;
+	height: 267px;
+	float: right;
+	margin-left: 10px;
+}
+
+.image-imagem_465_x_267 {
+	width: 465px;
+	height: 267px;	
+}
+
+.image-imagem_centralizada_no_paragrafo_465_x_267 {
+	width: 465px;
+	height: 267px;	
+	margin: auto;
+}
+
+.imagem_original_a_direita_do_paragrafo {
+	float: right;	
+}
+.imagem_original_a_esquerda_do_paragrafo {
+	float: left;	
+}
+
+.imagem_original_ao_centro_do_paragrafo {
+	margin: auto;	
+}
+
+.imagem_original {
+	
+}

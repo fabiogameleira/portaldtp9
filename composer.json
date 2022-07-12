@@ -39,13 +39,16 @@
         "drupal/devel": "^4.1",
         "drupal/ds": "^3.13",
         "drupal/extlink": "^1.6",
+        "drupal/extra_image_field_classes": "1.1",
         "drupal/field_group": "^3.2",
         "drupal/field_permissions": "1.1",
         "drupal/flexslider": "2.0",
         "drupal/flood_control": "^2.2",
         "drupal/fontawesome": "2.23",
         "drupal/fontyourface": "^3.6",
+        "drupal/image_resize_filter": "1.1",
         "drupal/imce": "2.4",
+        "drupal/insert": "^1.0",
         "drupal/layout_paragraphs": "^1.0",
         "drupal/menu_item_role_access": "^2.0",
         "drupal/menu_link_attributes": "^1.2",
@@ -55,6 +58,7 @@
         "drupal/tac_lite": "1.6",
         "drupal/taxonomy_manager": "2.0",
         "drupal/token": "^1.10",
+        "drupal/twig_vardumper": "3.0",
         "drupal/user_redirect": "2.0",
         "drupal/view_custom_table": "2.0",
         "drush/drush": "10.x",
@@ -63,7 +67,7 @@
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "sort-packages": true
