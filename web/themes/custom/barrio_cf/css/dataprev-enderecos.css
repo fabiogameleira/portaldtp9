@@ -1,0 +1,68 @@
+
+.view .node-enderecos h3 {
+  display: none;
+} 	
+
+@media (min-width: 1200px) {
+    .node-enderecos .field-collection-view {
+		width: 30%;
+		min-height: 370px;
+	}
+}
+
+@media (min-width: 992px) {
+    .node-enderecos .field-collection-view {
+		width: 30%;
+		min-height: 340px;
+	}
+}
+
+.node-enderecos .field-collection-view {
+	background-color: #f8f9fa;
+    color: #546E7a;
+}
+.node-enderecos .field-collection-view {
+    padding: 30px;
+    margin: 10px;
+    border-bottom: unset;
+}
+
+.node-enderecos .field-collection-view {
+    float: left;
+    flex: 1;
+    padding: 16px;
+	position: relative;
+}
+
+.node-enderecos .group-ficha-endereco {
+	min-height: 255px;
+}
+
+@media  (max-width: 1200px) {
+	.node-enderecos .group-ficha-endereco {
+		min-height: 285px;
+	}
+}
+
+@media (max-width: 992px) {
+	.node-enderecos .group-ficha-endereco {
+		min-height: 230px;
+	}
+}
+
+.view .group-ficha-endereco .field-name-field-local-endereco {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    /*min-height: 3em;*/
+}	
+
+.view .group-ficha-endereco .field-name-field-rua-endereco .field-label,
+.view .group-ficha-endereco .field-name-field-fone-endereco .field-label {
+	text-transform: uppercase;
+	margin-top: 20px;
+}	
+
+.view .node-enderecos  .field-collection-container {
+    border-bottom: none;
+    margin-bottom: 100px;
+}
