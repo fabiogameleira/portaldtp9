@@ -264,6 +264,15 @@ private static $installed = array (
         0 => '9.4.0',
       ),
     ),
+    'drupal/auto_entitylabel' => 
+    array (
+      'pretty_version' => '3.0.0-beta4',
+      'version' => '3.0.0.0-beta4',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.0-beta4',
+    ),
     'drupal/automated_cron' => 
     array (
       'replaced' => 

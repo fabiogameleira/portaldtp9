@@ -29,6 +29,7 @@
     "require": {
         "composer/installers": "^1.9",
         "drupal/admin_toolbar": "^3.1",
+        "drupal/auto_entitylabel": "^3.0@beta",
         "drupal/backup_migrate": "^5.0",
         "drupal/bootstrap4": "2.1",
         "drupal/bootstrap_barrio": "^5.5",
