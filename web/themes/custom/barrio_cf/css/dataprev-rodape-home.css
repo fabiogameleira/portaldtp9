@@ -1,0 +1,97 @@
+
+/* MENU RODAPE HOME */
+
+#block-menurodapehome-2 h2 {
+    color: #fff !important;
+    background-color: transparent !important;
+	text-align: center;
+} 
+
+
+#block-menurodapehome-2 ul li{
+	padding: 0;
+    border: 10px solid #244a7c;
+	background-color: #fff;
+	width: 25%;
+}
+
+#block-menurodapehome-2 ul li  a {
+    font-size: 1.125em;
+    font-weight: 900;
+    padding-top: 215px;
+    position: relative;
+    text-align: center;
+    height: 295px;
+    margin-left: 48px;
+    margin-right: 48px;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+	color: #134985;
+}
+
+/*
+@media (max-width: 468px) {
+	#block-menurodapehome-2 ul li  a {
+    margin: 0;
+    line-height: 0.875em;
+}
+
+}	
+
+#block-menurodapehome-2 .nav > li > a:hover, #block-menurodapehome-2 .nav > li > a:focus  {
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+
+@media (max-width: 468px) {
+	#block-menurodapehome-2 ul li a	{
+		font-size: 0.875em;
+	}	
+}	
+
+
+#block-menurodapehome-2-mais h2 {
+	background: url("../images/dropup-azul-arrow.gif") no-repeat 50%;
+}
+
+#block-menurodapehome-2 .block {
+    margin-bottom: 0px;
+}
+*/
+
+#block-menurodapehome-2 h2 {
+    text-align: center !important;
+	font-size: 2.25em; /*36px*/
+    text-transform: initial;
+    padding-bottom: 30px;
+}
+
+
+/* ICONES DO MENU COLOR 
+
+#block-menurodapehome-2 li {
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: 180px 180px;
+}
+
+*/
+
+.icon-home1 {background-image: url(/sites/default/files/imagens/icon-home/icon-home1.png);}
+.icon-home2 {background-image: url(/sites/default/files/imagens/icon-home/icon-home2.png);}
+.icon-home3 {background-image: url(/sites/default/files/imagens/icon-home/icon-home3.png);}
+.icon-home4 {background-image: url(/sites/default/files/imagens/icon-home/icon-home4.png);}
+.icon-home5 {background-image: url(/sites/default/files/imagens/icon-home/icon-home5.png);}
+.icon-home6 {background-image: url(/sites/default/files/imagens/icon-home/icon-home6.png);}
+.icon-home7 {background-image: url(/sites/default/files/imagens/icon-home/icon-home7.png);}
+.icon-home8 {background-image: url(/sites/default/files/imagens/icon-home/icon-home8.png);}
+
+/*
+@media (max-width: 468px) {
+	.icon-home1, .icon-home2, .icon-home3, .icon-home4,.icon-home5,.icon-home6, .icon-home7, .icon-home8 {
+		background-size: 100%;
+	}
+}
+*/

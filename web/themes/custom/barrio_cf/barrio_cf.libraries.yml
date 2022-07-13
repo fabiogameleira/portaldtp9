@@ -18,6 +18,7 @@ global-styling:
       css/dataprev-menu-servicos.css: {}
       css/dataprev-resumo.css: {}
       css/dataprev-estilo-imagem-corpo.css: {}
+      css/dataprev-rodape-home.css: {}
       css/flexslider_img.css: {}       
     component:
       css/components/site-footer.css: {} 

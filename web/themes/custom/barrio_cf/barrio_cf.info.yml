@@ -53,6 +53,7 @@ regions:
   content_top: 'Content top'
   content: Content
   content_bottom: 'Content bottom'
+  pos_content: 'Após o conteudo'
   
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

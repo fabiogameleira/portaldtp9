@@ -904,49 +904,15 @@ ol.breadcrumb  {
 	
 }
 
-/* DESTAQUE - PAGINA DE NOTICIAS e PÁGINA BASICA*/
-
-.region-noticia-destaque h2.block-title,
-.region-noticia-destaque .field--name-field-termo {
-    font-size: 2em;
-    padding-left: 0;
-    height: 70px;
-    vertical-align: middle;
-    text-transform: initial;
-    font-weight: 900;
-    margin-bottom: 70px;
+#pos-conteudo {
+    background-color: #244a7c;
 }
 
-.noticias-destaque h2,
-.noticias-destaque h3,
-.noticias-destaque a,
-.noticias-destaque p,
-.paginabasica-destaque h2,
-.paginabasica-destaque h3,
-.paginabasica-destaque a,
-.paginabasica-destaque p,
-.region-noticia-destaque .field--name-field-termo
-
- {
-    color: #fff !important;
+#pos-conteudo {
+    margin-top: 20px;
 }
 
-.noticias-destaque h2,
-.paginabasica-destaque h2 {
-    font-size: 2em !important;
-    font-weight: 900 !important;
-    line-height: 37px !important;
-    text-decoration: none !important;
-}
-
-.noticias-destaque .views-row,
-.paginabasica-destaque .views-row {
-	flex: unset !important;
-    width: unset !important;
-    min-width: unset !important;
-}
-
-.noticias-destaque,
-.paginabasica-destaque  {
-    padding-top: 10px;
+.region.region-pos-content {
+    padding-top: 60px;
+    padding-bottom: 50px;
 }
