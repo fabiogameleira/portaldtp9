@@ -849,9 +849,10 @@ table tr th {
   width:100%;
 }
 
+/*
 .node .field--type-image {
     float: none;
-}
+}*/
 
 #destaque {
 	padding: 0;

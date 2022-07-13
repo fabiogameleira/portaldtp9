@@ -63,10 +63,10 @@
 .page-taxonomy-term-3 .views-row {
 	flex: 0 0 auto;
     width: 33.33333333%;
-	min-height: 535px
+	/*min-height: 535px*/
 }
 
-.field--name-node-post-date {
+.field--name-node-post-date.field--label-inline {
 	float: left;
     margin-right: 10px;
 }

@@ -4,6 +4,7 @@
  * @file
  * Functions to support theming in the SASS Starterkit subtheme.
  */
+ 
 
 use Drupal\Core\Form\FormStateInterface;
 
@@ -15,6 +16,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Example on how to alter theme settings form
  */
 function barrio_cf_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+	
   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
     'bg-primary' => t('Primary'),
     'bg-secondary' => t('Secondary'),
@@ -33,11 +35,11 @@ function barrio_cf_form_system_theme_settings_alter(&$form, FormStateInterface $
   ];
 }
 
-
 function barrio_cf_preprocess_page(&$variables) {
 	// Default template: page.html.twig.
 	
 	// Lê parametros da página
+    
 	$parameters = \Drupal::routeMatch()->getParameters()->all();
 	$variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
 	

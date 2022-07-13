@@ -688,6 +688,15 @@
         0 => '9.4.0',
       ),
     ),
+    'drupal/empty_fields' => 
+    array (
+      'pretty_version' => '1.0.0-beta1',
+      'version' => '1.0.0.0-beta1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0-beta1',
+    ),
     'drupal/entity_reference' => 
     array (
       'replaced' => 
@@ -947,6 +956,15 @@
       array (
         0 => '9.4.0',
       ),
+    ),
+    'drupal/maxlength' => 
+    array (
+      'pretty_version' => '2.0.0-rc3',
+      'version' => '2.0.0.0-RC3',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0-rc3',
     ),
     'drupal/media' => 
     array (
