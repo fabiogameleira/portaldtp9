@@ -1,0 +1,40 @@
+.node--type-dtp-cards h2,
+.node--type-dtp-cards h2.node__title {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 25px;
+    color: #161516;
+    font-size: 2.25em;
+}
+
+.field--name-field-colecao-de-cards {
+
+}
+
+.node--type-dtp-cards .paragraph--type--colecao-de-cards {
+    position: relative;
+    padding: 10px;
+	margin: 0px 5px 10px 5px;
+    background-color: #f1f1f1;
+    height: 211px;
+    width: 276px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+	float: left;
+}
+
+.node--type-dtp-cards .paragraph--type--colecao-de-cards .field__item a {
+font-weight: 700;
+    color: #333333;
+    font-size: 1.375em;
+    display: block;
+    width: 100%;
+    line-height: 180px;
+}
+
+.node--type-dtp-cards .field--type-entity-reference {
+	width: 100%;
+	margin: 0;
+}
+

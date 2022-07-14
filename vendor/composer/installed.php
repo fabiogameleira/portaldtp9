@@ -354,6 +354,15 @@
         0 => '9.4.0',
       ),
     ),
+    'drupal/ckeditor_entity_link' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
+    ),
     'drupal/claro' => 
     array (
       'replaced' => 
@@ -696,6 +705,15 @@
       array (
         0 => '9.4.0',
       ),
+    ),
+    'drupal/editor_advanced_link' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2.0.0',
     ),
     'drupal/empty_fields' => 
     array (

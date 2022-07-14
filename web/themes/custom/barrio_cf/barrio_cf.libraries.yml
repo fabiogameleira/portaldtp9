@@ -20,7 +20,9 @@ global-styling:
       css/dataprev-estilo-imagem-corpo.css: {}
       css/dataprev-rodape-home.css: {}
       css/dataprev-enderecos.css: {}
-      css/flexslider_img.css: {}       
+      css/dataprev-cards.css: {}      
+      css/flexslider_img.css: {}   
+  
     component:
       css/components/site-footer.css: {} 
       css/components/skip-link.css: {}

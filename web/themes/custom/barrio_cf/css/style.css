@@ -860,12 +860,12 @@ table tr th {
 
 @media (min-width: 1400px) {
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-		max-width: 1146px;
+		max-width: 1170px;
 	}
 }
 @media (min-width: 1200px) {
 	.container, .container-lg, .container-md, .container-sm, .container-xl {
-		max-width: 1146px;
+		max-width: 1170px;
 	}
 }
 
@@ -895,8 +895,7 @@ ol.breadcrumb  {
 
 @media (max-width: 420px) {
 	img.align-left {
-	   float:none;
-
+	   /*float:none;*/
 	}
 	.field--name-body img {
 		margin: 0px 0 10px 0;

@@ -1,68 +1,86 @@
 
-.view .node-enderecos h3 {
+.group-ficha-endereco .field--name-field-local {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    /* min-height: 3em; */
+}
+
+.group-ficha-endereco .field--name-field-rua-endereco .field__label, 
+.group-ficha-endereco .field--name-field-fone-endereco .field__label {
+    font-size: 0.6875em;
+}
+
+.view .group-ficha-endereco .field--name-field-local {
+    font-size: 1.5em;
+    font-weight: 900;
+}
+
+.node--type-enderecos h3 {
   display: none;
 } 	
 
+.field--name-field-mapa a {
+    color: #666666;
+    font-weight: 600;
+    font-size: 0.6875em;
+    text-transform: uppercase;
+}
+
 @media (min-width: 1200px) {
-    .node-enderecos .field-collection-view {
+    .node--type-enderecos .paragraph--type--enderecos {
 		width: 30%;
 		min-height: 370px;
 	}
 }
 
-@media (min-width: 992px) {
-    .node-enderecos .field-collection-view {
-		width: 30%;
-		min-height: 340px;
-	}
-}
-
-.node-enderecos .field-collection-view {
+.node--type-enderecos .paragraph--type--enderecos {
 	background-color: #f8f9fa;
     color: #546E7a;
 }
-.node-enderecos .field-collection-view {
+.node--type-enderecos .paragraph--type--enderecos {
     padding: 30px;
     margin: 10px;
     border-bottom: unset;
 }
 
-.node-enderecos .field-collection-view {
+.node--type-enderecos .paragraph--type--enderecos {
     float: left;
     flex: 1;
     padding: 16px;
 	position: relative;
 }
 
-.node-enderecos .group-ficha-endereco {
+.node--type-enderecos .group-ficha-endereco {
 	min-height: 255px;
 }
 
 @media  (max-width: 1200px) {
-	.node-enderecos .group-ficha-endereco {
+	.node--type-enderecos .group-ficha-endereco {
 		min-height: 285px;
 	}
 }
 
-@media (max-width: 992px) {
-	.node-enderecos .group-ficha-endereco {
+@media (max-width: 468px) {
+	.node--type-enderecos .group-ficha-endereco {
 		min-height: 230px;
 	}
 }
 
-.view .group-ficha-endereco .field-name-field-local-endereco {
+
+.view .group-ficha-endereco .field--name-field-local {
     margin-bottom: 10px;
     text-transform: uppercase;
     /*min-height: 3em;*/
 }	
 
-.view .group-ficha-endereco .field-name-field-rua-endereco .field-label,
-.view .group-ficha-endereco .field-name-field-fone-endereco .field-label {
+.view .group-ficha-endereco .field--name-field-rua-endereco .field__label,
+.view .group-ficha-endereco .field--name-field-fone-endereco .field__label {
 	text-transform: uppercase;
 	margin-top: 20px;
 }	
 
-.view .node-enderecos  .field-collection-container {
+
+.view .node--type-enderecos  .field-collection-container {
     border-bottom: none;
     margin-bottom: 100px;
 }
