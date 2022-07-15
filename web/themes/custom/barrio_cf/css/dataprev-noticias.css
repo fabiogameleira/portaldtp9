@@ -27,10 +27,17 @@
 
 .noticias-destaque h2,
 .paginabasica-destaque h2 {
-    font-size: 2em !important;
-    font-weight: 900 !important;
-    line-height: 37px !important;
-    text-decoration: none !important;
+    font-size: 2em ;
+    font-weight: 900 ;
+    line-height: 37px ;
+    text-decoration: none ;
+}
+
+@media (max-width: 468px) {
+    .noticias-destaque h2,
+    .paginabasica-destaque h2 {
+        font-size: 1.3em;
+}
 }
 
 .noticias-destaque .views-row,
@@ -52,11 +59,6 @@
 	color: #161516;
 }
 
-.field--name-node-title h2 {
-    font-size: 1.375em;
-    font-weight: bold;
-    line-height: 26px;
-}
 
 .noticias img {
 	
@@ -111,6 +113,13 @@
 	/*min-height: 535px*/
 }
 
+@media (max-width: 468px) {
+    .page-taxonomy-term-3 .views-row {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 70px;
+    }
+}
 .field--name-node-post-date.field--label-inline {
 	float: left;
     margin-right: 10px;

@@ -54,6 +54,11 @@ regions:
   content: Content
   content_bottom: 'Content bottom'
   pos_content: 'Após o conteudo'
+
+  #BANNER
+  content_banner: 'Banner'
+  content_bannerleft: 'Banner à esquerda'
+  content_bannerright: 'Banner à direita'
   
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'

@@ -22,62 +22,66 @@
     position: relative;
     text-align: center;
     height: 295px;
-    margin-left: 48px;
-    margin-right: 48px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: 180px 180px;
 	color: #134985;
 }
 
-/*
+
+@media (max-width: 992px) {
+
+    #block-menurodapehome-2 ul li  a {  
+        padding-top: 170px;
+        height: 240px;
+        margin-left: unset;
+        margin-right: unset;
+        background-position: 50% 25%;
+        background-size: 131px;
+        width: 100%;
+    }
+    
+    #block-menurodapehome-2 ul li{
+        padding: 0;
+        border: 10px solid #244a7c;
+        background-color: #fff;
+        width: 33%;
+    }
+    
+    }
+
 @media (max-width: 468px) {
-	#block-menurodapehome-2 ul li  a {
-    margin: 0;
-    line-height: 0.875em;
+
+#block-menurodapehome-2 ul li  a {
+    font-size: 0.875em;
+    padding-top: 170px;
+    height: 240px;
+    margin-left: unset;
+    margin-right: unset;
+    background-position: 50% 25%;
+    background-size: 131px;
+    width: 100%;
 }
 
-}	
-
-#block-menurodapehome-2 .nav > li > a:hover, #block-menurodapehome-2 .nav > li > a:focus  {
-    text-decoration: underline;
-    background-color: transparent;
+#block-menurodapehome-2 ul li{
+	padding: 0;
+    border: 10px solid #244a7c;
+	background-color: #fff;
+	width: 50%;
 }
 
-
-@media (max-width: 468px) {
-	#block-menurodapehome-2 ul li a	{
-		font-size: 0.875em;
-	}	
-}	
-
-
-#block-menurodapehome-2-mais h2 {
-	background: url("../images/dropup-azul-arrow.gif") no-repeat 50%;
 }
 
-#block-menurodapehome-2 .block {
-    margin-bottom: 0px;
-}
-*/
 
 #block-menurodapehome-2 h2 {
     text-align: center !important;
 	font-size: 2.25em; /*36px*/
     text-transform: initial;
     padding-bottom: 30px;
+    margin-top: 0;
 }
-
-
-/* ICONES DO MENU COLOR 
-
-#block-menurodapehome-2 li {
-    background-position: 50% 25%;
-    background-repeat: no-repeat;
-    background-size: 180px 180px;
-}
-
-*/
 
 .icon-home1 {background-image: url(/sites/default/files/imagens/icon-home/icon-home1.png);}
 .icon-home2 {background-image: url(/sites/default/files/imagens/icon-home/icon-home2.png);}
@@ -87,11 +91,3 @@
 .icon-home6 {background-image: url(/sites/default/files/imagens/icon-home/icon-home6.png);}
 .icon-home7 {background-image: url(/sites/default/files/imagens/icon-home/icon-home7.png);}
 .icon-home8 {background-image: url(/sites/default/files/imagens/icon-home/icon-home8.png);}
-
-/*
-@media (max-width: 468px) {
-	.icon-home1, .icon-home2, .icon-home3, .icon-home4,.icon-home5,.icon-home6, .icon-home7, .icon-home8 {
-		background-size: 100%;
-	}
-}
-*/

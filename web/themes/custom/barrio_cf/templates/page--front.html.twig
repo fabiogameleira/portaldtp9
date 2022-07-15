@@ -133,9 +133,9 @@
 						{% endif %}
 						</div>
 						<div class="col-md-3 col-lg-3 subheader2-right">
-						  {% if page.search %}
+						  	{% if page.search %}
 							 {{ page.search }}
-						  {% endif %}					
+						  	{% endif %}					
 						</div>	
 					</div>
 				</div>	
@@ -246,15 +246,40 @@
               <main{{ content_attributes }}>
 				
 				{% if page.content_top %}
-				<section class="section col-sm-12">
-				  <a id="main-content-top"></a>
-				  {{ page.content_top }}
-				</section>
+					<section class="section col-sm-12">
+					<a id="main-content-top"></a>
+					{{ page.content_top }}
+					</section>
 				{% endif %}
+
+				<!-- CONTEÚDO BANNER -->
+				<div id="banner">
+					{#% if page.content_banner  or page.content_bannerleft or page.content_bannerright %#}
+							<!-- CONTEÚDO Banner -->
+							<div class="col-md-12 col-lg-12">
+								{% if page.content_banner %}								
+									{{ page.content_banner }}
+								{% endif %}
+							</div>
+							<!-- CONTEÚDO Banner esquerda -->
+							<div class="row">
+							<div class="col-sm-12 col-md-6 col-lg-6">									
+								{% if page.content_bannerleft %}
+									{{ page.content_bannerleft }}
+								{% endif %}
+							</div>
+							<!-- CONTEÚDO Banner direita-->
+							<div class="col-sm-12 col-md-6 col-lg-6">									
+								{% if page.content_bannerright %}
+									{{ page.content_bannerright }}
+								{% endif %}
+							</div>
+							</div>
+					{#% endif %#}
+				</div>
 				
 				<section class="section col-sm-12">
-                  {#/*<a id="main-content"></a>
-                  {{ page.content }}*/#}
+                  {#/*<a id="main-content"></a>{{ page.content }}*/#}
                 </section>
 				
 				{% if page.content_bottom %}
