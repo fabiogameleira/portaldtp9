@@ -915,3 +915,7 @@ ol.breadcrumb  {
     padding-top: 60px;
     padding-bottom: 50px;
 }
+
+.maintenance-page ul li {
+	list-style: none;
+}
