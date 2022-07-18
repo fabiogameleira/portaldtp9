@@ -1,10 +1,11 @@
 .node--type-dtp-cards h2,
 .node--type-dtp-cards h2.node__title {
     text-align: center;
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     margin-bottom: 25px;
     color: #161516;
     font-size: 2.25em;
+    font-weight: inherit;
 }
 
 .field--name-field-colecao-de-cards {
@@ -25,14 +26,29 @@
 }
 
 .node--type-dtp-cards .paragraph--type--colecao-de-cards .field__item a {
-font-weight: 700;
+    /*font-weight: 700;
     color: #333333;
     font-size: 1.375em;
     display: block;
     width: 100%;
-    line-height: 180px;
+    margin: auto;
+    padding: 25% 0% 25% 0%;*/
+
+    font-weight: 700;
+    color: #333333;
+    font-size: 1.375em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
 }
 
+@media (max-width: 468px) {
+    .node--type-dtp-cards.node--view-mode-teaser .node__content {
+        display: flex;
+        justify-content: center;
+    }
+}
 .node--type-dtp-cards .field--type-entity-reference {
 	width: 100%;
 	margin: 0;

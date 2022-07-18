@@ -65,6 +65,7 @@
         "drupal/token": "^1.10",
         "drupal/twig_vardumper": "3.0",
         "drupal/user_redirect": "2.0",
+        "drupal/video_embed_field": "^2.4",
         "drupal/view_custom_table": "2.0",
         "drush/drush": "10.x",
         "woocommerce/flexslider": "~2.0"

@@ -76,8 +76,16 @@ html, body {
 }
 
 a {
-    color: #2184cd;
+    /*color: #2184cd;*/
+	color: #333333;
+	font-weight: 500;
     text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #333333;
+    text-decoration: underline;
 }
 
 .subheader1 {
@@ -916,6 +924,43 @@ ol.breadcrumb  {
     padding-bottom: 50px;
 }
 
-.maintenance-page ul li {
+.maintenance-page ul li 	{
 	list-style: none;
+}
+
+.node--view-mode-teaser {
+    /* border-bottom: 1px solid #d3d7d9; */
+    /* margin-bottom: 30px; */
+    border-bottom: unset;
+    margin-bottom: unset;
+    padding-bottom: 15px;
+}
+
+
+.field.field--name-field-arquivos .field__label {
+    color: #333333;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 40px;
+    font-size: 2em;
+    border-bottom: 1px solid #ccc;
+}
+
+.field.field--name-field-arquivos .field__item {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0px 20px 0px;
+}
+
+.field.field--name-field-arquivo  .field__label {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
+.field.field--name-node-title  h2 {
+    text-transform: none;
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 1.68rem 0 1.68rem 0;
 }

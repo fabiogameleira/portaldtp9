@@ -1372,6 +1372,15 @@
       ),
       'reference' => '2.0.0',
     ),
+    'drupal/video_embed_field' => 
+    array (
+      'pretty_version' => '2.4.0',
+      'version' => '2.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.4',
+    ),
     'drupal/view_custom_table' => 
     array (
       'pretty_version' => '2.0.0',
