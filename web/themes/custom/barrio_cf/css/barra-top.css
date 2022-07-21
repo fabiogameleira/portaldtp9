@@ -11,19 +11,20 @@
 }
 
 #barra {
-	background-color: #000;
+    background-color: #666;
     margin: 0;
-    padding: 0px 10px 5px 10px;
+    padding: 0;
+    color: #FFFFFF;
 }
 
 #barra .barra-top-left {
-    /* margin: auto; */
-    text-align: center;
+    margin: auto; 
+    /*text-align: center;*/
 }
 
 #barra .region-top-header-right {
-    /*float: right;*/
-	text-align: center;
+    float: right;
+	/*text-align: center;*/
 }
 
 #barra .barra-top-center{
@@ -57,11 +58,6 @@
 
 #barra .papeis a, #barra .papeis a:hover {
     color: #FC0;
-}
-
-#barra {	
-   color: #FFFFFF;
-   padding: 10px
 }
 
 @media (min-width: 320px) and (max-width: 578px)  {
@@ -115,7 +111,7 @@
 
 #barra .nav > li > a:hover, #barra .nav > li > a:focus,
 #barra .nav > li > a:active {
-    background-color: #000;
+    background-color: #666;
 }
 
 #barra .nav .open > a, #barra .nav .open > a:hover, #barra .nav .open > a:focus {

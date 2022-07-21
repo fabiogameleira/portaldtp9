@@ -75,10 +75,15 @@ html, body {
     font-weight: 700;
 }
 
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 a {
     /*color: #2184cd;*/
 	color: #333333;
-	font-weight: 500;
+	/*font-weight: 500;*/
     text-decoration: none;
 }
 
@@ -86,6 +91,10 @@ a:hover,
 a:focus {
 	color: #333333;
     text-decoration: underline;
+}
+
+p {
+    color: #222222;
 }
 
 .subheader1 {
@@ -156,28 +165,6 @@ a:focus {
 	display:none !important;
 }
 
-#cookies {
-    padding: 10px;
-	margin: 0;
-    background: #ccc;
-    background: #f8f8f8;
-    background: #ededed;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-    transform-origin: center center;
-    animation-name: lcb-anim-from-bottom;
-    animation-duration: 400ms;
-    animation-timing-function: ease-in-out;
-}
-
-#cookies p {
-    margin: 0;
-    padding: 5px;
-}
-
-#cookies .block {
-	margin-top: 0px;
-    margin-bottom: 0px;
-}
 
 .nav > li > button {
 	border: none;
@@ -894,7 +881,7 @@ ol.breadcrumb  {
 
 .field--name-body {
     clear: both;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
 }
 
 .field--name-body img {
@@ -959,8 +946,24 @@ ol.breadcrumb  {
 
 
 .field.field--name-node-title  h2 {
-    text-transform: none;
-    font-size: 1.75em;
-    font-weight: 600;
-    margin: 1.68rem 0 1.68rem 0;
+    font-size: 1.375em;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+.btn-primary {
+    /* color: #fff; */
+    /* background-color: #0d6efd; */
+    /* border-color: #0d6efd; */
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
 }

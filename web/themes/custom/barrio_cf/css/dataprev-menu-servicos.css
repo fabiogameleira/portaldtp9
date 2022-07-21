@@ -1,3 +1,4 @@
+.menu--menu-servicos .nav-item a,
 .menu--menu-servicosbranco .nav-item a {
     font-weight: 700;
     font-size: 0.675em;
@@ -10,11 +11,27 @@
     font-size: 1.4em;
 }
 
-.menu--menu-servicosbranco .nav li a, .menu--menu-servicosbranco .nav li button, .menu--menu-servicosbranco .nav li span {
+.menu--menu-servicos  		.nav li a,
+.menu--menu-servicos  		.nav li button,
+.menu--menu-servicos  		.nav li span
+ {
+    /*color: #fff;*/
+}
+
+.menu--menu-servicosbranco .nav li a,
+.menu--menu-servicosbranco .nav li button,
+.menu--menu-servicosbranco .nav li span
+ {
     color: #fff;
 }
 
+.menu--menu-servicos .fal.fa-assistive-listening-systems:before,
+.menu--menu-servicos .fas.fa-bullhorn:before
+ {
+    /*color: #fff;*/
+}
 .menu--menu-servicosbranco .fal.fa-assistive-listening-systems:before,
-.menu--menu-servicosbranco .fas.fa-bullhorn:before {
+.menu--menu-servicosbranco .fas.fa-bullhorn:before
+ {
     color: #fff;
 }
