@@ -11,11 +11,8 @@
     font-size: 1.4em;
 }
 
-.menu--menu-servicos  		.nav li a,
-.menu--menu-servicos  		.nav li button,
-.menu--menu-servicos  		.nav li span
- {
-    /*color: #fff;*/
+.menu--menu-servicos ul.nav {
+    justify-content: end;
 }
 
 .menu--menu-servicosbranco .nav li a,

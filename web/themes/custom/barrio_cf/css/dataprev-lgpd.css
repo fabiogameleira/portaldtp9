@@ -1,13 +1,5 @@
-#cookies {
-    padding: 10px;
-    background: #ccc;
-    background: #f8f8f8;
-    background: #ededed;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
-    transform-origin: center center;
-    animation-name: lcb-anim-from-bottom;
-    animation-duration: 400ms;
-    animation-timing-function: ease-in-out;
+.cookie_lgpd #cookies {
+	display:none !important;
 }
 
 #cookies p {

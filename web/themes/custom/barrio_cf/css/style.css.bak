@@ -389,13 +389,8 @@ nav li.dropdown-item {
 }
 }
 
-a.navbar-brand  {
-    font-weight: 800;
-    color: #161516
-}
-
-a.navbar-brand img {
-    margin-right: 20px;
+nav a.navbar-brand {
+    color: initial;
 }
 
 .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {

@@ -54,6 +54,7 @@
         "drupal/imce": "2.4",
         "drupal/insert": "^1.0",
         "drupal/layout_paragraphs": "^1.0",
+        "drupal/masquerade": "^2.0@beta",
         "drupal/maxlength": "^2.0@RC",
         "drupal/menu_item_role_access": "^2.0",
         "drupal/menu_link_attributes": "^1.2",
