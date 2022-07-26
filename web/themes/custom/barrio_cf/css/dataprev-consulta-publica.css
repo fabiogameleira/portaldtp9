@@ -1,0 +1,49 @@
+/* CONSULTA PUBLICA */
+/* CONSULTA PUBLICA - PARCERIAS*/
+
+
+
+.node--type-consulta-publica .field--name-field-evento-de-consulta-publica,
+.node--type-consulta-publica-parcerias .field-collection-container {
+    border: none;
+    margin: 0px;
+}
+.node--type-consulta-publica .field--name-field-evento-de-consulta-publica .field--name-field-evento,
+.node--type-consulta-publica-parcerias .field-name-field-evento {
+    /* float: left; */
+    /* width: 80%; */
+    /*font-size: 0.875em;*/
+    font-weight: bold;
+}
+
+.node--type-consulta-publica  .field--name-field-evento-de-consulta-publica .field__item .paragraph {
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+    border-top: 1px solid #D3D7D9;
+    border-bottom: none;
+}
+
+.node--type-consulta-publica  .field--name-field-documentos .field__item .paragraph {
+    padding: 10px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+
+}
+
+.node--type-consulta-publica  .field--name-field-evento-de-consulta-publica,
+.node--type-consulta-publica-parcerias  .field-name-field-evento-de-consulta-publica {
+    border-bottom: 1px solid #D3D7D9;
+	margin-bottom: 20px;
+}
+
+.node--type-consulta-publica .field-name-field-data,
+.node--type-consulta-publica-parcerias .field-name-field-data
+ {
+    background-image: url(../images/icoDATAHORAazul.gif);
+    background-repeat: no-repeat;
+    padding: 2px 0px 2px 25px;
+    background-position: 0px 0px;
+    font-size: 0.875em;
+    color: #666666;
+    height: 35px;
+}
+
