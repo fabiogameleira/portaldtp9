@@ -4,8 +4,8 @@
     /*margin-top: 60px;*/
     margin-bottom: 25px;
     color: #161516;
-    font-size: 2.25em;
-    font-weight: inherit;
+    font-size: 2.25em !important;
+    font-weight: inherit !important;
 }
 
 .field--name-field-colecao-de-cards {
@@ -20,7 +20,7 @@
     height: 211px;
     width: 276px;
     text-align: center;
-    display: flex;
+    display: block;
     align-items: center;
 	float: left;
 }
@@ -43,6 +43,21 @@
     min-height: 200px;
 }
 
+.node--type-dtp-cards .paragraph--type--colecao-de-cards .field--name-field-agenda-de-autoridades.field__item  a {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: block;
+    top: 0px;
+    font-size: 1em;
+    color: #161516;
+    font-weight: 700;
+    padding-top: 120px;
+}
+
 @media (max-width: 468px) {
     .node--type-dtp-cards.node--view-mode-teaser .node__content {
         display: flex;
@@ -54,3 +69,17 @@
 	margin: 0;
 }
 
+.node--type-dtp-cards .field--name-field-nome-da-autoridade {
+    position: absolute;
+    margin-left: 10px;
+    margin-right: 10px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    display: block;
+    top: 50px;
+    font-size: 1.3em;
+    color: #161516;
+    font-weight: 700;
+    text-transform: uppercase;
+}
