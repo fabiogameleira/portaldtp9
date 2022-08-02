@@ -1184,6 +1184,15 @@
         0 => '9.4.0',
       ),
     ),
+    'drupal/publishcontent' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.5',
+    ),
     'drupal/quickedit' => 
     array (
       'replaced' => 

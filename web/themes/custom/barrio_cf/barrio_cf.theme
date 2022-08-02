@@ -128,3 +128,15 @@ function barrio_cf_preprocess_menu(&$variables, $hook) {
 		}   
    }
 }*/
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter() for node forms.
+ */
+function barrio_cf_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $node = $form_state->getFormObject()->getEntity();
+  //if ($node->getType() != 'YOUR_CONTENT_TYPE') {
+  //  return;
+  //}
+  //dpm($form['revision']);
+  $form['revision']['#access'] = FALSE;
+}

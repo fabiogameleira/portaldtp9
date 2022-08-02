@@ -862,3 +862,25 @@ ol.breadcrumb  {
 .path-taxonomy .cor-fundo {
     background-color: #f8f9fa;
 }
+
+.form-type-vertical-tabs {
+    display: none;
+}
+
+.js .field--widget-paragraphs .paragraphs-dropbutton-wrapper {
+    margin: 10px 0;
+
+}
+
+.field-multiple-table.responsive-enabled.table.table-striped .field-label .label {
+    float: left;
+}
+
+.js .field--widget-paragraphs .tabledrag-handle .handle {
+    height: 22px;
+    width: 22px;
+}
+
+.js .field--widget-paragraphs td {
+    padding: 10px;
+}

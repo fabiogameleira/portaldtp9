@@ -1,0 +1,472 @@
+
+/**************************/
+/*  AGENDA DE AUTORIDADES */
+/***************************/
+
+.field--name-field-cargo-agenda {
+	font-size: 0.75em;
+	text-transform: uppercase;
+	color: #3b70d6;
+	font-weight: bold;
+    font-size: 1em;
+}
+
+.field--name-field-nome {
+    color: #161516;
+    font-size: 1.45em;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.field-name-field-cargo-pe,
+.field-name-field-cargo-dgj,
+.field-name-field-cargo-dds,
+.field-name-field-cargo-drn,
+.field-name-field-cargo-dap,
+.field-name-field-cargo-dit,
+.field-name-field-cargo-drd,
+.field-name-field-cargo-dpe,
+.field-name-field-cargo-dfs,
+.field--name-field-cargo-agenda {	
+	text-transform: uppercase;
+	color: #333333;;
+	font-weight: bold;
+    margin: 0;
+}
+
+
+
+.field-name-field-data-pe,
+.field-name-field-data-dgj,
+.field-name-field-data-dds,  
+.field-name-field-data-drn,
+.field-name-field-data-dap,
+.field-name-field-data-dit, 
+.field-name-field-data-drd, 
+.field-name-field-data-dpe, 
+.field-name-field-data-dfs,
+.field--name-field-data-agenda {
+	color: #666666;
+}
+
+.field-name-field-data-pe  .date-form-element-content-multiline, 
+.field-name-field-data-dgj .date-form-element-content-multiline, 
+.field-name-field-data-dds .date-form-element-content-multiline, 
+.field-name-field-data-drn .date-form-element-content-multiline,
+.field-name-field-data-dap .date-form-element-content-multiline,  
+.field-name-field-data-dit .date-form-element-content-multiline, 
+.field-name-field-data-drd .date-form-element-content-multiline, 
+.field-name-field-data-dpe .date-form-element-content-multiline, 
+.field-name-field-data-dfs .date-form-element-content-multiline,
+.field-name-field-data-agenda .date-form-element-content-multiline {
+    padding: 0px; 
+    border: none;
+}
+
+.content .field-name-field-hora-pe,
+.content .field-name-field-hora-dgj,
+.content .field-name-field-hora-dds,
+.content .field-name-field-hora-drn,
+.content .field-name-field-hora-dap,
+.content .field-name-field-hora-dit,
+.content .field-name-field-hora-drd,
+.content .field-name-field-hora-dpe,
+.content .field-name-field-hora-dfs,
+.field--name-field-hora-agenda
+ {
+	color: #333333;
+}
+
+.content .field-name-field-local-pe,
+.content .field-name-field-local-dgj,
+.content .field-name-field-local-dds,
+.content .field-name-field-local-drn,
+.content .field-name-field-local-dap,
+.content .field-name-field-local-dit,
+.content .field-name-field-local-drd,
+.content .field-name-field-local-dpe,
+.content .field-name-field-local-dfs,
+.field--name-field-local-agenda
+ {
+	/*font-size: 0.875em;*/
+	color: #666666 ;
+}
+
+.field-name-field-autoridade {
+   margin-bottom: 20px;
+}
+
+.field-name-field-data-pe,
+.field-name-field-data-dgj,
+.field-name-field-data-dds,
+.field-name-field-data-drn,
+.field-name-field-data-dap,
+.field-name-field-data-dit,
+.field-name-field-data-drd,
+.field-name-field-data-dpe,
+.field-name-field-data-dfs,
+.field--name-field-data-agenda {
+   margin-bottom: 30px;
+}
+
+.content .field-name-field-hora-pe,
+.content .field-name-field-hora-dgj,
+.content .field-name-field-hora-dds,
+.content .field-name-field-hora-drn,
+.content .field-name-field-hora-dap,
+.content .field-name-field-hora-dit,
+.content .field-name-field-hora-drd,
+.content .field-name-field-hora-dpe,
+.content .field-name-field-hora-dfs,
+.field--name-field-hora-agenda {
+    float: left;
+    width: 7%;
+	background-image: url(../image/relogio.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+	background-size: 25px;
+    padding-left: 25px;
+}
+
+.field--name-field-hora-fim {
+    float: left;
+    width: 8%;
+}
+
+.field--name-field-hora-fim::before {
+    float: left;
+    width: 1em;
+	content: " - ";
+}
+
+div#edit-field-evento-pe-und-0-field-hora-pe input {
+	width: 5em;
+}
+
+div#edit-field-evento-pe-und-0-field-hora-fim {
+	width: 10%;
+}
+
+div#edit-field-evento-pe-und-0-field-hora-fim input {
+	width: 5em;
+}
+
+.page-node-edit .content .field-name-field-hora-fim::before {
+		content: "" !important;
+}
+
+[id*="edit-field-evento"] {
+	width: initial !important;
+	margin-right: 10px;
+}
+
+.content .field-name-field-descricao-pe,
+.content .field-name-field-local-pe ,
+.content .field-name-field-descricao-dgj,
+.content .field-name-field-local-dgj ,
+.content .field-name-field-descricao-dds,
+.content .field-name-field-local-dds ,
+.content .field-name-field-descricao-drn,
+.content .field-name-field-local-drn,
+.content .field-name-field-descricao-dap,
+.content .field-name-field-local-dap,
+.content .field-name-field-descricao-dit,
+.content .field-name-field-local-dit ,
+.content .field-name-field-descricao-drd,
+.content .field-name-field-local-drd ,
+.content .field-name-field-descricao-dfs,
+.content .field-name-field-local-dfs ,
+.content .field-name-field-descricao-dpe,
+.content .field-name-field-local-dpe, 
+.content .field-name-field-descricao-agenda,
+.field--name-field-local-agenda, 
+.content .field-name-field-tema,
+.field--name-field-pauta,
+.field--name-field-participantes,
+.field--name-field-compromisso
+  {
+	margin-left: 15%;
+  }
+  
+.page-node-edit .content .field-name-field-descricao-pe,
+.page-node-edit .content .field-name-field-local-pe ,
+.page-node-edit .content .field-name-field-descricao-dgj,
+.page-node-edit .content .field-name-field-local-dgj ,
+.page-node-edit .content .field-name-field-descricao-dds,
+.page-node-edit .content .field-name-field-local-dds ,
+.page-node-edit .content .field-name-field-descricao-drn,
+.page-node-edit .content .field-name-field-local-drn,
+.page-node-edit .content .field-name-field-descricao-dap,
+.page-node-edit .content .field-name-field-local-dap,
+.page-node-edit .content .field-name-field-descricao-dit,
+.page-node-edit .content .field-name-field-local-dit ,
+.page-node-edit .content .field-name-field-descricao-drd,
+.page-node-edit .content .field-name-field-local-drd ,
+.page-node-edit .content .field-name-field-descricao-dfs,
+.page-node-edit .content .field-name-field-local-dfs ,
+.page-node-edit .content .field-name-field-descricao-dpe,
+.page-node-edit .content .field-name-field-local-dpe, 
+.page-node-edit .content .field-name-field-descricao-agenda,
+.page-node-edit .content .field-name-field-local-agenda, 
+.page-node-edit .content .field-name-field-tema,
+.page-node-edit .content .field-name-field-pauta,
+.page-node-edit .content .field-name-field-participantes,
+.page-node-edit .content .field-name-field-compromisso
+  {
+	margin-left: 0%;
+  }
+  
+.page-node-edit  a.tabledrag-handle .handle {
+    width: initial !important;
+	height: initial;
+    margin: initial;
+}
+
+.node-form.node-agenda*  {
+	width: inicial;
+}
+
+@media (max-width: 480px) {
+
+.content .field-name-field-hora-pe,
+.content .field-name-field-hora-dgj,
+.content .field-name-field-hora-dds,
+.content .field-name-field-hora-drn,
+.content .field-name-field-hora-dap,
+.content .field-name-field-hora-dit,
+.content .field-name-field-hora-drd,
+.content .field-name-field-hora-dpe,
+.content .field-name-field-hora-dfs,
+.content .field-name-field-hora-agenda {
+		width: 25%;
+	}
+
+	.content .field-name-field-descricao-pe,
+	.content  .field-name-field-local-pe,
+	.content .field-name-field-descricao-dgj,
+	.content  .field-name-field-local-dgj,	
+	.content .field-name-field-descricao-dds,
+	.content  .field-name-field-local-dds,
+	.content .field-name-field-descricao-drn,
+	.content  .field-name-field-local-drn,
+	.content .field-name-field-descricao-dap,
+	.content  .field-name-field-local-dap,	
+	.content .field-name-field-descricao-dit,
+	.content  .field-name-field-local-dit,
+	.content .field-name-field-descricao-drd,
+	.content  .field-name-field-local-drd,
+	.content .field-name-field-descricao-dpe,
+	.content  .field-name-field-local-dpe,
+	.content .field-name-field-descricao-dfs,
+	.content  .field-name-field-local-dfs ,
+	.content  .field-name-field-local-agenda
+	{
+		margin-left: 25%;
+	}
+}
+
+
+.view-agenda-do-presidente .views-row .views-field-field-data-pe-1 .date-display-single {
+   display: none;
+}
+
+.agenda-completa .content {
+    padding: 10px;
+} 
+
+.agenda-completa .entity {
+    /*border-bottom: 1px solid #cccccc;*/
+}
+
+.agenda-completa .field-item,
+.agenda-bloco .field-item {
+	text-align: justify;
+}
+
+/* Fim do Agenda do Presidente */
+
+
+/*----------------------------------------------------------------*/
+/* Formatos para todas os blocos (view) de agendas de autoridades */
+ 
+/*Cabeçalho */
+.agenda-bloco {
+    border-radius: 7px 7px 7px 7px;
+}
+
+.agenda-bloco  .block {
+	margin-bottom: 0px;
+}
+
+.agenda-bloco .content {
+	padding: 10px;
+}
+
+.agenda-bloco .view-empty .content {
+    padding: 0px;
+}
+
+.agenda-bloco .view-empty .content  .field-name-field-descricao-pe, 
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dgj,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dds, 
+.agenda-bloco .view-empty .content  .field-name-field-descricao-drn,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dap,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dit, 
+.agenda-bloco .view-empty .content  .field-name-field-descricao-drd,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dfs,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-dpe,
+.agenda-bloco .view-empty .content  .field-name-field-descricao-agenda {
+    padding: 10px;
+}
+
+.agenda-bloco.agenda-diretoria a.agenda.direita {
+	background-image: url(../images/setaBRANCAmenuFECHAR.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	display: block;
+}
+
+.agenda-bloco.agenda-diretoria a.agenda.direita.collapsed {
+	background-image: url(../images/setaBRANCAmenuABRIR.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	display: block;
+}
+
+.agenda-bloco.agenda-superintendencia a.agenda.direita {
+	background-image: url(../images/dropup-azul-arrow.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	display: block;
+}
+
+.agenda-bloco.agenda-superintendencia a.agenda.direita.collapsed {
+	background-image: url(../images/dropdown-azul-arrow.gif);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	display: block;
+}
+
+.agenda-bloco h2 {
+    text-transform: uppercase;
+    font-size: 0.875em;
+    font-weight: bold;
+    line-height: 1em;
+	margin-bottom: 0;
+}
+
+.agenda-bloco h2 a {
+	margin: 0;
+	padding: 15px 10px 15px 10px;
+}
+
+/* campos */
+.agenda-bloco  .field  {
+	font-size: 0.875em;
+}
+
+/* Nome da Autoridade */
+.agenda-bloco div.views-field.views-field-field-autoridade div.field-content  {
+    line-height: 20px;
+    font-size: 1em;
+    font-weight: bold;
+	padding-left: 10px;
+}
+
+/* data */
+
+.agenda-bloco div.views-field.views-field-field-data-pe div.field-content ,
+.agenda-bloco  div.views-field.views-field-field-data-dgj div.field-content ,
+.agenda-bloco  div.views-field.views-field-field-data-dds div.field-content ,
+.agenda-bloco  div.views-field.views-field-field-data-drn div.field-content ,
+.agenda-bloco  div.views-field.views-field-field-data-dap div.field-content ,
+.agenda-bloco  div.views-field.views-field-field-data-dit div.field-content ,
+.agenda-bloco   div.views-field.views-field-field-data-dfs div.field-content ,
+.agenda-bloco   div.views-field.views-field-field-data-dpe div.field-content ,
+.agenda-bloco   div.views-field.views-field-field-data-drd div.field-content,
+.agenda-bloco   div.views-field.views-field-field-data-agenda div.field-content  {
+    line-height: 40px;
+    font-size: 1em;
+    font-weight: bold;
+	padding-left: 10px;
+}
+
+/* local */
+.agenda-bloco  .field-name-field-local-pe ,
+.agenda-bloco  .field-name-field-local-dgj,
+.agenda-bloco  .field-name-field-local-dds,
+.agenda-bloco  .field-name-field-local-drn,
+.agenda-bloco  .field-name-field-local-dap,
+.agenda-bloco  .field-name-field-local-dpe,
+.agenda-bloco .field-name-field-local-dit,
+.agenda-bloco .field-name-field-local-dfs,
+.agenda-bloco .field-name-field-local-drd,
+.agenda-bloco .field-name-field-local-agenda {
+	clear:both;
+    margin-top: 10px;
+}
+
+/* hora */
+.agenda-bloco  .field-name-field-hora-pe ,
+.agenda-bloco  .field-name-field-hora-dgj, 
+.agenda-bloco  .field-name-field-hora-dds, 
+.agenda-bloco  .field-name-field-hora-drn,
+.agenda-bloco  .field-name-field-hora-dap, 
+.agenda-bloco  .field-name-field-hora-dpe, 
+.agenda-bloco  .field-name-field-hora-dit ,
+.agenda-bloco  .field-name-field-hora-dfs ,
+.agenda-bloco  .field-name-field-hora-drd,
+.agenda-bloco  .field-name-field-hora-agenda {
+    background-image: url(../images/relogio.jpg);
+    background-repeat: no-repeat;
+    padding: 0px 30px;
+    margin: 0px;
+    background-position: 10px;
+    float: left;
+}
+
+
+@media (max-width: 480px) {
+	.agenda-bloco  .field-name-field-hora-pe {
+		width: 20%;
+	}
+	.agenda-bloco  .field-name-field-descricao-pe,
+	.agenda-bloco  .field-name-field-local-pe {
+		margin-left: 20%;
+	}
+}
+
+
+/* Descrição */
+.agenda-bloco  .field-name-field-descricao-pe ,
+.agenda-bloco  .field-name-field-descricao-dgj ,
+.agenda-bloco  .field-name-field-descricao-dds ,
+.agenda-bloco  .field-name-field-descricao-drn ,
+.agenda-bloco  .field-name-field-descricao-dap ,
+.agenda-bloco  .field-name-field-descricao-dpe ,
+.agenda-bloco  .field-name-field-descricao-dit ,
+.agenda-bloco   .field-name-field-descricao-dfs ,
+.agenda-bloco  .field-name-field-descricao-drd,
+.agenda-bloco  .field-name-field-descricao-agenda  {
+    /* margin: 0px 0px 0px 65px;*/
+}
+
+
+/* label local */
+.agenda-bloco   div.field-name-field-local-pe .field-label ,
+.agenda-bloco   div.field-name-field-local-dgj .field-label, 
+.agenda-bloco   div.field-name-field-local-dds .field-label, 
+.agenda-bloco   div.field-name-field-local-drn .field-label, 
+.agenda-bloco   div.field-name-field-local-dap .field-label, 
+.agenda-bloco   div.field-name-field-local-dpe .field-label, 
+.agenda-bloco   div.field-name-field-local-dit .field-label,  
+.agenda-bloco   div.field-name-field-local-dfs .field-label, 
+.agenda-bloco   div.field-name-field-local-drd .field-label
+.agenda-bloco   div.field-name-field-local-agenda .field-label {
+	display: initial;
+	clear: both;
+    float: left;
+	font-weight: normal;
+}
+

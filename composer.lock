@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1dab13efcf855e4f346c51dd7ef14581",
+    "content-hash": "196437b230adc7d8bb86d7ec635ebd4f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4266,6 +4266,70 @@
             "homepage": "https://www.drupal.org/project/permissions_by_term",
             "support": {
                 "source": "https://git.drupalcode.org/project/permissions_by_term"
+            }
+        },
+        {
+            "name": "drupal/publishcontent",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/publishcontent.git",
+                "reference": "8.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/publishcontent-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "5a38bc2a45aad9f0e6e4979cd028bbc6f1615bb3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.5",
+                    "datestamp": "1650156571",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AaronBauman",
+                    "homepage": "https://www.drupal.org/user/384578"
+                },
+                {
+                    "name": "Simon Georges",
+                    "homepage": "https://www.drupal.org/user/172312"
+                },
+                {
+                    "name": "jacobroufa",
+                    "homepage": "https://www.drupal.org/user/168080"
+                },
+                {
+                    "name": "johnennew",
+                    "homepage": "https://www.drupal.org/user/1150042"
+                },
+                {
+                    "name": "malaussene",
+                    "homepage": "https://www.drupal.org/user/79249"
+                },
+                {
+                    "name": "rodrigoaguilera",
+                    "homepage": "https://www.drupal.org/user/408170"
+                }
+            ],
+            "description": "Adds a 'Publish' or 'Unpublish' link on the node edit/view pages, and a 'Publish Link' field if the Views module is enabled.",
+            "homepage": "https://www.drupal.org/project/publishcontent",
+            "support": {
+                "source": "https://git.drupalcode.org/project/publishcontent"
             }
         },
         {

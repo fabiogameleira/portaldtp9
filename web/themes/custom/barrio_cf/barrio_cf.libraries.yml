@@ -23,6 +23,7 @@ global-styling:
       css/dataprev-cards.css: {}      
       css/dataprev-banner.css: {}
       css/dataprev-consulta-publica.css: {}
+      css/dataprev-agendadeautoridades.css: {}
       css/flexslider_img.css: {}   
   
     component:
