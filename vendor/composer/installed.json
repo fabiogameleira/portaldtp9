@@ -2764,6 +2764,57 @@
             "install-path": "../../web/modules/contrib/ctools"
         },
         {
+            "name": "drupal/date_popup",
+            "version": "1.2.0",
+            "version_normalized": "1.2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_popup.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_popup-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "49b076db3cac96812c11c20f53496751fc34f9e6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1657668220",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "benjy",
+                    "homepage": "https://www.drupal.org/user/1852732"
+                },
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a HTML 5 date popup for all views filters.",
+            "homepage": "https://www.drupal.org/project/date_popup",
+            "support": {
+                "source": "https://git.drupalcode.org/project/date_popup"
+            },
+            "install-path": "../../web/modules/contrib/date_popup"
+        },
+        {
             "name": "drupal/devel",
             "version": "4.1.5",
             "version_normalized": "4.1.5.0",
@@ -3076,6 +3127,57 @@
                 "source": "https://git.drupalcode.org/project/entity_reference_revisions"
             },
             "install-path": "../../web/modules/contrib/entity_reference_revisions"
+        },
+        {
+            "name": "drupal/entity_type_clone",
+            "version": "1.7.0",
+            "version_normalized": "1.7.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/entity_type_clone.git",
+                "reference": "8.x-1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_type_clone-8.x-1.7.zip",
+                "reference": "8.x-1.7",
+                "shasum": "cad1536cbae4dd069bc78230fcd418ea07a6513c"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.7",
+                    "datestamp": "1621579347",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ajay_reddy",
+                    "homepage": "https://www.drupal.org/user/3261994"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
+                }
+            ],
+            "description": "This module provide option to clone entity types.",
+            "homepage": "https://www.drupal.org/project/entity_type_clone",
+            "support": {
+                "source": "https://git.drupalcode.org/project/entity_type_clone"
+            },
+            "install-path": "../../web/modules/contrib/entity_type_clone"
         },
         {
             "name": "drupal/extlink",

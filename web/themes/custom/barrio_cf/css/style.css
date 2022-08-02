@@ -858,3 +858,7 @@ ol.breadcrumb  {
     background-color: #000;
     border-color: #000;
 }
+
+.path-taxonomy .cor-fundo {
+    background-color: #f8f9fa;
+}

@@ -653,6 +653,15 @@
       ),
       'reference' => '8.x-3.7',
     ),
+    'drupal/date_popup' => 
+    array (
+      'pretty_version' => '1.2.0',
+      'version' => '1.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.2',
+    ),
     'drupal/datetime' => 
     array (
       'replaced' => 
@@ -739,6 +748,15 @@
       array (
       ),
       'reference' => '8.x-1.9',
+    ),
+    'drupal/entity_type_clone' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.7',
     ),
     'drupal/extlink' => 
     array (
