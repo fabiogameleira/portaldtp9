@@ -884,3 +884,7 @@ ol.breadcrumb  {
 .js .field--widget-paragraphs td {
     padding: 10px;
 }
+
+.block.block-system.block-system-main-block h2{
+    display: none;
+}

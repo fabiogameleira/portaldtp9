@@ -210,40 +210,60 @@
 			  {% endblock %}
 			{% endif %}
 		  
-		  <div class="row row-offcanvas row-offcanvas-left clearfix">
-              <main{{ content_attributes }}>
-				{% if page.content_top %}
-				<section class="section col-sm-12">
-				  <a id="main-content-top"></a>
-				  {{ page.content_top }}
-				</section>
-				{% endif %}
-				<section class="section col-sm-12">
-                  <a id="main-content"></a>
-                  {{ page.content }}
-                </section>
-				{% if page.content_bottom %}
-				<section class="section col-sm-12">
-                  <a id="main-content-bottom"></a>
-                  {{ page.content_bottom }}
-                </section>
-				{% endif %}
-              </main>
-            {% if page.sidebar_first %}
-              <div{{ sidebar_first_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_first }}
-                </aside>
-              </div>
-            {% endif %}
-            {% if page.sidebar_second %}
-              <div{{ sidebar_second_attributes }}>
-                <aside class="section" role="complementary">
-                  {{ page.sidebar_second }}
-                </aside>
-              </div>
-            {% endif %}
-          </div>
+		    <div class="row row-offcanvas row-offcanvas-left clearfix">
+                <main{{ content_attributes }}>
+					
+					{% if page.content_top %}
+						<section class="section col-sm-12">
+						<a id="main-content-top"></a>
+						{{ page.content_top }}
+						</section>
+					{% endif %}
+					
+					<div class="row">
+						{% if page.sidebar_first %}
+							<div{{ sidebar_first_attributes }} class="section col-md-2">
+								<aside>
+								{{ page.sidebar_first }}
+								</aside>
+							</div>
+						{% endif %}
+
+						{% if page.sidebar_first or page.sidebar_second %}
+							{% if page.sidebar_first and page.sidebar_second %}
+								<div class="section col-md-8">
+								<section>
+							{% else %}
+								<div class="section col-md-10">
+								<section>
+							{% endif %}
+						{% else %}
+							<div class="section col-md-12">
+							<section>
+						{% endif %}
+
+							<a id="main-content"></a>
+							{{ page.content }}
+						</section>
+						</div>
+
+						{% if page.sidebar_second %}
+							<div{{ sidebar_second_attributes }} class="section col-md-2">
+								<aside>
+								{{ page.sidebar_second }}
+								</aside>
+							</div>
+						{% endif %}
+					</div>
+
+					{% if page.content_bottom %}
+						<section class="section col-sm-12">
+						<a id="main-content-bottom"></a>
+						{{ page.content_bottom }}
+						</section>
+					{% endif %}
+                </main>
+            </div>
         </div>
       {% endblock %}
     </div>
