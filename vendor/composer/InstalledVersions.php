@@ -667,6 +667,15 @@ private static $installed = array (
         0 => '9.4.0',
       ),
     ),
+    'drupal/csv_serialization' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.1',
+    ),
     'drupal/ctools' => 
     array (
       'pretty_version' => '3.7.0',
@@ -1456,6 +1465,15 @@ private static $installed = array (
         0 => '9.4.0',
       ),
     ),
+    'drupal/views_data_export' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
     'drupal/views_ui' => 
     array (
       'replaced' => 
@@ -1593,6 +1611,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '84ecbc2dbecc31bd23faf759a0e329ee49abddbd',
+    ),
+    'league/csv' => 
+    array (
+      'pretty_version' => '9.8.0',
+      'version' => '9.8.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9d2e0265c5d90f5dd601bc65ff717e05cec19b47',
     ),
     'masterminds/html5' => 
     array (
