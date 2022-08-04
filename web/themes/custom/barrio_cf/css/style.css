@@ -888,3 +888,26 @@ ol.breadcrumb  {
 .block.block-system.block-system-main-block h2{
     display: none;
 }
+
+table {
+    caption-side: initial;
+}
+
+table caption {
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.btn-outline-primary {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .8em;
+}
+
+.search-block-form .btn-outline-primary {
+    background-color: #fff;
+    font-size: 1em;
+}

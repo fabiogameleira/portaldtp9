@@ -23,17 +23,19 @@
 	margin: auto;
 }
 
-.imagem_original_a_direita_do_paragrafo {
+.image-imagem_original_a_direita_do_paragrafo {
 	float: right;	
 }
-.imagem_original_a_esquerda_do_paragrafo {
+.image-imagem_original_a_esquerda_do_paragrafo {
 	float: left;	
 }
 
-.imagem_original_ao_centro_do_paragrafo {
-	margin: auto;	
+.image-imagem_original_ao_centro_do_paragrafo {
+	image-imagem_original_ao_centro_do_paragrafo;
+	margin-left: auto;	
+	margin-right: auto;
 }
 
-.imagem_original {
+.image-imagem_original {
 	
 }

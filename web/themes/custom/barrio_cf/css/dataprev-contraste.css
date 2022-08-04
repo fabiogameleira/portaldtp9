@@ -86,6 +86,32 @@ body.highcontrast {
     color: #FC0;
 }
 
-.highcontrast .menu--menu-hamburguer ul.nav {
-    background-image: url(../image/icon-menu-contrast.png);
+
+.highcontrast .table>:not(caption)>*>* {
+    color: #fff;
+}
+
+.highcontrast .table>caption {
+    color: #fff;
+}
+
+.highcontrast .page-link {
+    background-color: #000;
+}
+
+.highcontrast  .search-block-form .btn-outline-primary, .highcontrast .search-block-form .btn-outline-primary {
+    background-color: #fff;
+}
+
+
+.highcontrast   .menu--menu-hamburguer ul li {
+    background-image: url(../image/icon-menu.png);
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    background-position-x: 0%;
+}
+
+.highcontrast  .menu--menu-hamburgerbranco ul li {
+    background-image: url(../image/icon-menu.png);
+
 }

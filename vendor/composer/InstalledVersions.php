@@ -808,6 +808,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.1',
     ),
+    'drupal/feeds' => 
+    array (
+      'pretty_version' => '3.0.0-beta2',
+      'version' => '3.0.0.0-beta2',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.0-beta2',
+    ),
     'drupal/field' => 
     array (
       'replaced' => 
@@ -982,6 +991,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '8.x-1.4',
+    ),
+    'drupal/jquery_ui_accordion' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
     ),
     'drupal/jsonapi' => 
     array (
@@ -1464,6 +1482,24 @@ private static $installed = array (
       array (
         0 => '9.4.0',
       ),
+    ),
+    'drupal/views_autocomplete_filters' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.3',
+    ),
+    'drupal/views_bootstrap' => 
+    array (
+      'pretty_version' => '5.4.0',
+      'version' => '5.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5.4.0',
     ),
     'drupal/views_data_export' => 
     array (
