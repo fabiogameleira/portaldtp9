@@ -33,16 +33,24 @@ ul#blockmenuassuntosemalta li a, ul#blockmenumaisnoticias li a {
 }
 
 /* PERGUNTAS FREQUENTES */
-.view-perguntas-frequentes h3 {
+
+.perguntas-frequentes h2 {
 	font-weight: bold;
-    font-size: 1.42em; /* 32px */
+	text-transform: uppercase;
+	color: inherit;
 } 
 
-.view-perguntas-frequentes h4 {
+.perguntas-frequentes h3 {
 	font-weight: bold;
+    font-size: 1.1em; 
 } 
 
-.view-perguntas-frequentes legenda {
+.perguntas-frequentes .views-row {
+    margin-left: 30px;
+} 
+
+
+.perguntas-frequentes legenda {
 	font-size: 0.75em;
 }
 

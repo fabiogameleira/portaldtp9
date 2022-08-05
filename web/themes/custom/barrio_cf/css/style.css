@@ -916,3 +916,14 @@ table caption {
 .block-system-main-block > h2 {
   display: none;
 }
+
+p a {
+    font-weight: 600;
+    color: #2184cd;
+}
+
+p a:hover, p a:focus {
+    color: #2184cd;
+    text-decoration: underline;
+}
+
