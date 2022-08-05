@@ -20,7 +20,8 @@ global-styling:
       css/dataprev-estilo-imagem-corpo.css: {}
       css/dataprev-rodape-home.css: {}
       css/dataprev-enderecos.css: {}
-      css/dataprev-cards.css: {}      
+      css/dataprev-cards.css: {}  
+      css/dataprev-cards-agenda-de-autoridades.css: {}   
       css/dataprev-banner.css: {}
       css/dataprev-consulta-publica.css: {}
       css/dataprev-agendadeautoridades.css: {}
