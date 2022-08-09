@@ -1022,6 +1022,15 @@
         0 => '9.4.0',
       ),
     ),
+    'drupal/linked_field' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.3',
+    ),
     'drupal/locale' => 
     array (
       'replaced' => 
