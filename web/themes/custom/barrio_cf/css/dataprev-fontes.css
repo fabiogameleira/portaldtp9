@@ -466,3 +466,12 @@ table caption {
 .view .group-ficha-endereco .field-name-field-fone-endereco .field-label {
     font-size: 0.6875em; /* 11px*/ 
 }	
+
+/* PRÊMIOS E RECONHECIMENTOS */
+
+.node--type-premios-e-reconhecimentos .field--name-field-url-de-destino {
+	font-size: 1.75em;
+	margin-bottom: 10px;
+	font-weight: 600 	;
+}
+
