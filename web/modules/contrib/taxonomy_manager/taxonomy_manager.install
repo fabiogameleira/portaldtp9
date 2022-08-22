@@ -23,7 +23,7 @@ function taxonomy_manager_uninstall() {
 /**
  * Issue #3164182: JQuery UI is being phased out from Drupal core.
  */
-function webform_update_8200() {
+function taxonomy_manager_update_8200() {
   \Drupal::service('module_installer')->install([
     'jquery_ui',
   ]);

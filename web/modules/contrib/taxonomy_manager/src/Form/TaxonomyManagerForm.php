@@ -154,7 +154,10 @@ class TaxonomyManagerForm extends FormBase {
    *   The form structure.
    */
   public function buildForm(array $form, FormStateInterface $form_state, VocabularyInterface $taxonomy_vocabulary = NULL) {
-    $form['voc'] = ['#type' => 'value', "#value" => $taxonomy_vocabulary];
+    $form['voc'] = [
+      '#type' => 'value',
+      "#value" => $taxonomy_vocabulary,
+    ];
     $form['#attached']['library'][] = 'taxonomy_manager/form';
 
     if ($this->taxonomyManagerHelper->vocabularyIsEmpty($taxonomy_vocabulary->id())) {
@@ -169,6 +172,7 @@ class TaxonomyManagerForm extends FormBase {
       '#type' => 'fieldset',
       '#title' => $this->t('Toolbar'),
     ];
+
     $form['toolbar']['add'] = [
       '#type' => 'submit',
       '#name' => 'add',
@@ -177,6 +181,7 @@ class TaxonomyManagerForm extends FormBase {
         'callback' => '::addFormCallback',
       ],
     ];
+
     $form['toolbar']['delete'] = [
       '#type' => 'submit',
       '#name' => 'delete',
@@ -188,6 +193,7 @@ class TaxonomyManagerForm extends FormBase {
         'callback' => '::deleteFormCallback',
       ],
     ];
+
     $form['toolbar']['move'] = [
       '#type' => 'submit',
       '#name' => 'move',
@@ -196,6 +202,7 @@ class TaxonomyManagerForm extends FormBase {
         'callback' => '::moveFormCallback',
       ],
     ];
+
     $form['toolbar']['export'] = [
       '#type' => 'submit',
       '#name' => 'export',
@@ -203,6 +210,49 @@ class TaxonomyManagerForm extends FormBase {
       '#ajax' => [
         'callback' => '::exportFormCallback',
       ],
+    ];
+
+    $form['toolbar']['miniexport'] = [
+      '#type' => 'submit',
+      '#name' => 'export',
+      '#value' => $this->t('Export all'),
+      '#ajax' => [
+        'callback' => '::exportListFormCallback',
+      ],
+    ];
+    /* Vocabulary switcher */
+    $vocabularies = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->loadMultiple();
+    foreach ($vocabularies as $voc) {
+      $voc_list[$voc->id()] = $voc->label();
+    }
+
+    $current_path = \Drupal::service('path.current')->getPath();
+    $url_parts = explode('/',$current_path);
+    $voc_id = end($url_parts);
+    $form['toolbar']['vocabulary_switcher'] = [
+      '#type' => 'select',
+      '#options' => $voc_list,
+      '#attributes' => ['onchange' => "form.submit('taxonomy-manager-vocabulary-terms-form')"],
+      '#default_value' => $voc_id,
+      '#weight' => -1,
+    ];
+
+    $form['toolbar']['search_button'] =[
+      '#type' => 'button',
+      '#value' => $this->t('Search'),
+      '#attributes' => ['class' => ['taxonomy-manager-search-button']],
+    ];
+
+    /* Autocomplete function redirecting to taxonomy term details page */
+    $form['toolbar']['search_terms'] = [
+      '#type' => 'entity_autocomplete',
+      '#title' => $this->t('Search terms'),
+      '#target_type' => 'taxonomy_term',
+      '#selection_settings' => [
+        'target_bundles' => [$voc_id],
+      ],
+      '#prefix' => '<div class="taxonomy-manager-autocomplete-input">',
+      '#suffix' => '</div>',
     ];
 
     /* Taxonomy manager. */
@@ -249,8 +299,23 @@ class TaxonomyManagerForm extends FormBase {
   /**
    * {@inheritdoc}
    */
+  public function taxonomy_term_submit_handler(array &$form, FormStateInterface $form_state) {
+    $tid = $form_state->getValue(['search_terms']);
+    $url = Url::fromRoute('entity.taxonomy_term.edit_form', [
+      'taxonomy_term' => $tid,
+    ]);
+    $form_state->setRedirectUrl($url);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $form_state->getValue(['taxonomy', 'manager', 'tree']);
+    $url = Url::fromRoute('taxonomy_manager.admin_vocabulary', [
+      'taxonomy_vocabulary' => $form_state->getValue(['vocabulary_switcher']),
+    ]);
+    $form_state->setRedirectUrl($url);
   }
 
   /**
@@ -279,6 +344,20 @@ class TaxonomyManagerForm extends FormBase {
    */
   public function exportFormCallback($form, FormStateInterface $form_state) {
     return $this->modalHelper($form_state, 'Drupal\taxonomy_manager\Form\ExportTermsForm', 'taxonomy_manager.admin_vocabulary.export', $this->t('Export terms'));
+  }
+
+  /**
+   * AJAX callback handler for export terms from a given vocabulary.
+   */
+  public function exportListFormCallback($form, FormStateInterface $form_state) {
+    return $this->modalHelper($form_state, 'Drupal\taxonomy_manager\Form\ExportTermsMiniForm', 'taxonomy_manager.admin_vocabulary.exportlist', $this->t('Export terms'));
+  }
+
+  /**
+   * AJAX callback handler for export terms from a given vocabulary.
+   */
+  public function exportCsvFormCallback($form, FormStateInterface $form_state) {
+    return $this->modalHelper($form_state, 'Drupal\taxonomy_manager\Form\ExportTermsMiniForm', 'taxonomy_manager.admin_vocabulary.exportlist', $this->t('Export terms (CSV)'));
   }
 
   /**
@@ -351,7 +430,7 @@ class TaxonomyManagerForm extends FormBase {
     $del_form = $this->formBuilder->getForm($class_name, $taxonomy_vocabulary, $selected_terms);
     $del_form['#attached']['library'][] = 'core/drupal.dialog.ajax';
 
-    // Change the form action url form the current site to the add form.
+    // Change the form action url form the current site to the current form.
     $del_form['#action'] = Url::fromRoute($route_name, ['taxonomy_vocabulary' => $taxonomy_vocabulary->id()])->toString();
 
     $response = new AjaxResponse();

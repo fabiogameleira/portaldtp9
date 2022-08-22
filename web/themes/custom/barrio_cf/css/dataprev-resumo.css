@@ -9,8 +9,7 @@
     width: 100%;
 }
 #show-floatmenu ul li a, 
-#show-floatmenu ul li button,
-#show-floatmenu ul li span {
+#show-floatmenu ul li button {
 	padding: 10px;	
 	color: #4F4E4E;
 }
@@ -96,6 +95,14 @@
     position: relative;
     display: block;
     padding: 10px 10px 10px 10px;
+}
+
+.floatmenu .nav  li  a:hover,
+.floatmenu .nav  li  a:focus,
+.floatmenu .nav  li  button:hover,
+.floatmenu .nav  li  button:focus
+ {
+    background-color: #eee;
 }
 
 .floatmenu h2.block-title {

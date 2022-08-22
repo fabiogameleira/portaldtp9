@@ -4,7 +4,7 @@ description: 'Sets a character limit and shows a character count on titles and t
 core_version_requirement: ^8.8 || ^9
 package: Fields
 
-# Information added by Drupal.org packaging script on 2022-06-30
-version: '2.0.0-rc3'
+# Information added by Drupal.org packaging script on 2022-07-31
+version: '2.0.0'
 project: 'maxlength'
-datestamp: 1656596001
+datestamp: 1659297560

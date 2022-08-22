@@ -30,6 +30,14 @@ taxonomy_manager.subtree:
   requirements:
     _permission: 'access taxonomy manager list'
 
+taxonomy_manager.subtree.child_parents:
+  path: '/taxonomy_manager/subtree/child-parents'
+  defaults:
+    _controller: '\Drupal\taxonomy_manager\Controller\SubTreeController::jsonChildParentsString'
+    _title: 'Sub Tree Child Parents String'
+  requirements:
+    _permission: 'access taxonomy manager list'
+
 taxonomy_manager.admin_vocabulary.add:
   path: '/admin/structure/taxonomy_manager/voc/{taxonomy_vocabulary}/add'
   defaults:
@@ -44,12 +52,20 @@ taxonomy_manager.admin_vocabulary.delete:
     _form: '\Drupal\taxonomy_manager\Form\DeleteTermsForm'
     _title: 'Delete terms'
   requirements:
-    _entity_create_access: 'taxonomy_term:{taxonomy_vocabulary}'
+    _taxonomy_manager_access_check: 'TRUE'
 
 taxonomy_manager.admin_vocabulary.export:
   path: '/admin/structure/taxonomy_manager/voc/{taxonomy_vocabulary}/export'
   defaults:
     _form: '\Drupal\taxonomy_manager\Form\ExportTermsForm'
+    _title: 'Export terms'
+  requirements:
+    _entity_create_access: 'taxonomy_term:{taxonomy_vocabulary}'
+
+taxonomy_manager.admin_vocabulary.exportlist:
+  path: '/admin/structure/taxonomy_manager/voc/{taxonomy_vocabulary}/export/list'
+  defaults:
+    _form: '\Drupal\taxonomy_manager\Form\ExportTermsMiniForm'
     _title: 'Export terms'
   requirements:
     _entity_create_access: 'taxonomy_term:{taxonomy_vocabulary}'
@@ -60,4 +76,4 @@ taxonomy_manager.admin_vocabulary.move:
     _form: '\Drupal\taxonomy_manager\Form\MoveTermsForm'
     _title: 'Move terms'
   requirements:
-    _entity_create_access: 'taxonomy_term:{taxonomy_vocabulary}'
+    _taxonomy_manager_access_check: 'TRUE'

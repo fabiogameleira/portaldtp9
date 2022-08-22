@@ -55,9 +55,6 @@ class MaxLengthCallbacks implements TrustedCallbackInterface {
     if (isset($element['#attributes']['#maxlength_js_enforce']) && $element['#attributes']['#maxlength_js_enforce']) {
       $element['#attributes']['class'][] = 'maxlength_js_enforce';
     }
-    if (isset($element['#attributes']['#maxlength_js_truncate_html']) && $element['#attributes']['#maxlength_js_truncate_html']) {
-      $element['#attributes']['class'][] = 'maxlength_js_truncate_html';
-    }
     return $element;
   }
 
