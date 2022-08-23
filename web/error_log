@@ -1,0 +1,169 @@
+[30-Jun-2022 16:26:59 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:27:04 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:27:10 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:27:13 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:28:18 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:28:22 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:29:12 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:31:17 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[30-Jun-2022 16:32:18 America/Fortaleza] PDOException: SQLSTATE[HY000] [2002] Connection refused in /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 79 #0 /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/Connection.php(189): PDO->__construct('mysql:host=127....', 'drupaluser', '', Array)
+#1 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(411): Drupal\mysql\Driver\Database\mysql\Connection::open(Array)
+#2 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/Database/Database.php(189): Drupal\Core\Database\Database::openConnection('default', 'default')
+#3 [internal function]: Drupal\Core\Database\Database::getConnection('default')
+#4 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(79): call_user_func_array('Drupal\\Core\\Dat...', Array)
+#5 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'database')
+#6 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(212): Drupal\Component\DependencyInjection\Container->get('database', 1)
+#7 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(62): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters(Array)
+#8 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Component/DependencyInjection/Container.php(176): Drupal\Component\DependencyInjection\PhpArrayContainer->createService(Array, 'cache.container')
+#9 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(550): Drupal\Component\DependencyInjection\Container->get('cache.container')
+#10 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(895): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(472): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home2/lupadi39/public_html/portaldtp9/web/core/lib/Drupal/Core/DrupalKernel.php(708): Drupal\Core\DrupalKernel->boot()
+#13 /home2/lupadi39/public_html/portaldtp9/web/index.php(19): Drupal\Core\DrupalKernel->handle(Object(Symfony\Component\HttpFoundation\Request))
+#14 {main}
+[01-Jul-2022 14:17:04 America/Sao_Paulo] Uncaught PHP Exception Drupal\Core\Database\DatabaseExceptionWrapper: "SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction: INSERT INTO "cache_config" ("cid", "expire", "created", "tags", "checksum", "data", "serialized") VALUES (:db_insert_placeholder_0, :db_insert_placeholder_1, :db_insert_placeholder_2, :db_insert_placeholder_3, :db_insert_placeholder_4, :db_insert_placeholder_5, :db_insert_placeholder_6), (:db_insert_placeholder_7, :db_insert_placeholder_8, :db_insert_placeholder_9, :db_insert_placeholder_10, :db_insert_placeholder_11, :db_insert_placeholder_12, :db_insert_placeholder_13) ON DUPLICATE KEY UPDATE "cid" = VALUES("cid"), "expire" = VALUES("expire"), "created" = VALUES("created"), "tags" = VALUES("tags"), "checksum" = VALUES("checksum"), "data" = VALUES("data"), "serialized" = VALUES("serialized"); Array
+(
+    [:db_insert_placeholder_0] => core.entity_view_display.node.article.teaser
+    [:db_insert_placeholder_1] => -1
+    [:db_insert_placeholder_2] => 1656695824.588
+    [:db_insert_placeholder_3] => 
+    [:db_insert_placeholder_4] => 0
+    [:db_insert_placeholder_5] => a:11:{s:4:"uuid";s:36:"a586d21f-c253-4ebd-94a1-82d3e3680044";s:8:"langcode";s:5:"pt-br";s:6:"status";b:1;s:12:"dependencies";a:2:{s:6:"config";a:8:{i:0;s:33:"core.entity_view_mode.node.teaser";i:1;s:29:"field.field.node.article.body";i:2;s:32:"field.field.node.article.comment";i:3;s:36:"field.field.node.article.field_image";i:4;s:35:"field.field.node.article.field_tags";i:5;s:36:"field.field.node.article.field_termo";i:6;s:18:"image.style.medium";i:7;s:17:"node.type.article";}s:6:"module";a:3:{i:0;s:5:"image";i:1;s:4:"text";i:2;s:4:"user";}}s:5:"_core";a:1:{s:19:"default_config_hash";s:43:"83jX5ChAGdMzOxiDA_B1NjgebVMuD8lNVDgClg_QVP8";}s:2:"id";s:19:"node.article.teaser";s:16:"targetEntityType";s:4:"node";s:6:"bundle";s:7:"article";s:4:"mode";s:6:"teaser";s:7:"content";a:4:{s:4:"body";a:6:{s:4:"type";s:23:"text_summary_or_trimmed";s:5:"label";s:6:"hidden";s:8:"settings";a:1:{s:11:"trim_length";i:600;}s:20:"third_party_settings";a:0:{}s:6:"weight";i:0;s:6:"region";s:7:"content";}s:11:"field_image";a:6:{s:4:"type";s:5:"image";s:5:"label";s:6:"hidden";s:8:"settings";a:3:{s:10:"image_link";s:7:"content";s:11:"image_style";s:6:"medium";s:13:"image_loading";a:1:{s:9:"attribute";s:4:"lazy";}}s:20:"third_party_settings";a:0:{}s:6:"weight";i:-1;s:6:"region";s:7:"content";}s:10:"field_tags";a:6:{s:4:"type";s:22:"entity_reference_label";s:5:"label";s:5:"above";s:8:"settings";a:1:{s:4:"link";b:1;}s:20:"third_party_settings";a:0:{}s:6:"weight";i:10;s:6:"region";s:7:"content";}s:5:"links";a:2:{s:6:"weight";i:100;s:6:"region";s:7:"content";}}s:6:"hidden";a:5:{s:7:"comment";b:1;s:11:"field_image";b:1;s:10:"field_tags";b:1;s:11:"field_termo";b:1;s:8:"langcode";b:1;}}
+    [:db_insert_placeholder_6] => 1
+    [:db_insert_placeholder_7] => core.entity_view_display.node.article.default
+    [:db_insert_placeholder_8] => -1
+    [:db_insert_placeholder_9] => 1656695824.588
+    [:db_insert_placeholder_10] => 
+    [:db_insert_placeholder_11] => 0
+    [:db_insert_placeholder_12] => a:11:{s:4:"uuid";s:36:"122bfa1c-53cf-435f-a36b-1c638029eb46";s:8:"langcode";s:5:"pt-br";s:6:"status";b:1;s:12:"dependencies";a:2:{s:6:"config";a:6:{i:0;s:29:"field.field.node.article.body";i:1;s:32:"field.field.node.article.comment";i:2;s:36:"field.field.node.article.field_image";i:3;s:35:"field.field.node.article.field_tags";i:4;s:36:"field.field.node.article.field_termo";i:5;s:17:"node.type.article";}s:6:"module";a:3:{i:0;s:2:"ds";i:1;s:4:"text";i:2;s:4:"user";}}s:5:"_core";a:1:{s:19:"default_config_hash";s:43:"7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk";}s:2:"id";s:20:"node.article.default";s:16:"targetEntityType";s:4:"node";s:6:"bundle";s:7:"article";s:4:"mode";s:7:"default";s:7:"content";a:2:{s:4:"body";a:6:{s:4:"type";s:12:"text_default";s:5:"label";s:6:"hidden";s:8:"settings";a:0:{}s:20:"third_party_settings";a:0:{}s:6:"weight";i:0;s:6:"region";s:7:"content";}s:11:"field_termo";a:6:{s:4:"type";s:22:"entity_reference_label";s:5:"label";s:5:"above";s:8:"settings";a:1:{s:4:"link";b:0;}s:20:"third_party_settings";a:1:{s:2:"ds";a:1:{s:8:"ds_limit";s:0:"";}}s:6:"weight";i:1;s:6:"region";s:7:"content";}}s:6:"hidden";a:5:{s:7:"comment";b:1;s:11:"field_image";b:1;s:10:"field_tags";b:1;s:8:"langcode";b:1;s:5:"links";b:1;}}
+    [:db_insert_placeholder_13] => 1
+)
+" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/mysql/src/Driver/Database/mysql/ExceptionHandler.php line 53
+[27-Jul-2022 19:38:29 America/Sao_Paulo] Uncaught PHP Exception LogicException: "Could not determine image width for 'public://field/image/capa/parcerias_portal_dataprev.jpg' using image style with ID: max_2600x2600. This image style can not be used for a responsive image style mapping using the 'sizes' attribute." at /home2/lupadi39/public_html/portaldtp9/web/core/modules/responsive_image/responsive_image.module line 386
+[27-Jul-2022 19:38:40 America/Sao_Paulo] Uncaught PHP Exception LogicException: "Could not determine image width for 'public://field/image/capa/parcerias_portal_dataprev.jpg' using image style with ID: max_2600x2600. This image style can not be used for a responsive image style mapping using the 'sizes' attribute." at /home2/lupadi39/public_html/portaldtp9/web/core/modules/responsive_image/responsive_image.module line 386
+[04-Aug-2022 19:44:07 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:44:40 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:45:23 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:49:03 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:49:13 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:49:18 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 19:49:24 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 20:03:59 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 20:04:04 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 20:04:07 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 20:04:14 America/Sao_Paulo] Uncaught PHP Exception Drupal\Component\Plugin\Exception\PluginNotFoundException: "Unable to determine class for field type 'feeds_item' found in the 'field.storage.node.feeds_item' configuration" at /home2/lupadi39/public_html/portaldtp9/web/core/modules/field/src/FieldStorageConfigStorage.php line 167
+[04-Aug-2022 20:06:00 America/Sao_Paulo] Uncaught PHP Exception LogicException: "Could not determine image width for 'public://field/image/capa/concurso_novoportal_imagem.jpg' using image style with ID: max_2600x2600. This image style can not be used for a responsive image style mapping using the 'sizes' attribute." at /home2/lupadi39/public_html/portaldtp9/web/core/modules/responsive_image/responsive_image.module line 386
+[04-Aug-2022 20:09:17 America/Sao_Paulo] Uncaught PHP Exception LogicException: "Could not determine image width for 'public://field/image/capa/concurso_novoportal_imagem.jpg' using image style with ID: max_2600x2600. This image style can not be used for a responsive image style mapping using the 'sizes' attribute." at /home2/lupadi39/public_html/portaldtp9/web/core/modules/responsive_image/responsive_image.module line 386
+[04-Aug-2022 20:09:46 America/Sao_Paulo] Uncaught PHP Exception LogicException: "Could not determine image width for 'public://field/image/capa/concurso_novoportal_imagem.jpg' using image style with ID: max_2600x2600. This image style can not be used for a responsive image style mapping using the 'sizes' attribute." at /home2/lupadi39/public_html/portaldtp9/web/core/modules/responsive_image/responsive_image.module line 386
