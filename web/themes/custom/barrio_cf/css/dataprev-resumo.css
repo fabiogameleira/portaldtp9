@@ -10,8 +10,9 @@
 }
 #show-floatmenu ul li a, 
 #show-floatmenu ul li button {
-	padding: 10px;	
+
 	color: #4F4E4E;
+    font-size: 0.875em;
 }
 
 #show-floatmenu h2 {
@@ -91,10 +92,20 @@
 	left: 0;
 		}
 
-.floatmenu .nav > li > a {
+.floatmenu > li > a {
     position: relative;
     display: block;
     padding: 10px 10px 10px 10px;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
 }
 
 .floatmenu .nav  li  a:hover,
